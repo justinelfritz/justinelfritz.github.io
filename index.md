@@ -1,8 +1,8 @@
 ---
 layout: page
 title: J.G. Elfritz
-tagline: Easier websites with GitHub Pages
-description: Minimal tutorial on making a simple website with GitHub Pages
+tagline: initial site build, under construction.
+description: Site build following K.Broman template for github.io
 ---
 
 [Github Pages](https://pages.github.com) provide a simple way to make a

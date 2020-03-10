@@ -10,11 +10,11 @@ highlighter: rouge
 #
 title : simple site
 author :
-  name : Karl Broman
-  email : kbroman@gmail.com
-  github : kbroman
-  twitter : kwbroman
-  feedburner : nil
+  name : J.G. Elfritz
+  email : justin.elfritz@gmail.com
+  github : mag06
+#  twitter : kwbroman
+#  feedburner : nil
 
 # NOTE: Replacing this next line with your own URL
 production_url : https://kbroman.github.io/simple_site
