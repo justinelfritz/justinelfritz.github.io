@@ -1,7 +1,7 @@
 ---
 layout: page
-title: $J.\,G.\,Elfritz$ 
-tagline: Easy websites with GitHub Pages: $a+b=c$
+title: J.G. Elfritz
+tagline: Easier websites with GitHub Pages
 description: Minimal tutorial on making a simple website with GitHub Pages
 ---
 
