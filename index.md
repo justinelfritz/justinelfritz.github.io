@@ -7,9 +7,15 @@ description: Site build following K.Broman template for github.io
 
 <span style="font-family:Times New Roman">Testing this pag with multiple fonts, like Times New Roman.</span>
 
-<span style="font-family:Georgia">Testing this pag with multiple fonts, like Times New Roman.</span>
+<span style="font-family:Georgia; font-size: 2em">Testing this pag with multiple fonts, like Georgia 2em.</span>
 
-<span style="font-family:Trebuchet MS">Testing this pag with multiple fonts, like Times New Roman.</span>
+<span style="font-family:Georgia; font-size: 3em">Testing this pag with multiple fonts, like Georgia 3em.</span>
+
+<span style="font-family:Georgia; font-size: 4em">Testing this pag with multiple fonts, like Georgia 4em.</span>
+
+<span style="font-family:Trebuchet MS">Testing this pag with multiple fonts, like Trebuchet MS.</span>
+
+
 
 
 <!---[Github Pages](https://pages.github.com) provide a simple way to make a --->
