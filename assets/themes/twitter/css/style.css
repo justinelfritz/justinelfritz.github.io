@@ -18,7 +18,7 @@
   top: 0; /* Stay at the top */
   left: 0;
 /*  background-color: #b8deff;  */
-  background-color: #91b1cc
+  background-color: #91b1cc;
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 20px;
 }
@@ -28,7 +28,8 @@
   padding: 6px 8px 6px 16px;
   text-decoration: none;
   font-family: Georgia;
-  font-size: 1.5em;
+  font-variant: small-caps
+  font-size: 2em;
   color: #383b3d;
   display: block;
 }
