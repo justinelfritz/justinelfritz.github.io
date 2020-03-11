@@ -7,11 +7,11 @@ description: Site build following K.Broman template for github.io
 
 <span style="font-family:Times New Roman">Testing this pag with multiple fonts, like Times New Roman.</span>
 
-<span style="font-family:Georgia; font-size: 2em">Testing this pag with multiple fonts, like Georgia 2em.</span>
+<span style="font-family:Georgia; font-size: 0.5em">Testing this pag with multiple fonts, like Georgia 0.5em.</span>
 
-<span style="font-family:Georgia; font-size: 3em">Testing this pag with multiple fonts, like Georgia 3em.</span>
+<span style="font-family:Georgia; font-size: 1.0em">Testing this pag with multiple fonts, like Georgia 1em.</span>
 
-<span style="font-family:Georgia; font-size: 4em">Testing this pag with multiple fonts, like Georgia 4em.</span>
+<span style="font-family:Georgia; font-size: 1.5em">Testing this pag with multiple fonts, like Georgia 1.5em.</span>
 
 <span style="font-family:Trebuchet MS">Testing this pag with multiple fonts, like Trebuchet MS.</span>
 
