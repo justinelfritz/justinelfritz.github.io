@@ -5,6 +5,8 @@ tagline: initial site build, under construction.
 description: Site build following K.Broman template for github.io
 ---
 
+This is the Home page. We attempt to render some inline Mathjax here, as in the quadratic formulat on a very very very very long line such as this one here okay? Okay here is the formula \\(a\cdot x^2 + b\cdot x + c =0)\\ and we'd like to find the zeros here. 
+
 <!---[Github Pages](https://pages.github.com) provide a simple way to make a --->
 <!---website using--->
 <!---[Markdown](https://daringfireball.net/projects/markdown/) and--->
