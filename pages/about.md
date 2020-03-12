@@ -1,7 +1,7 @@
 ---
 layout: page
-title: about this page and author 
-description: a test page for now
+title: about
+description: general synopsis and motivation
 ---
 
 This page is under construction. 
