@@ -2,14 +2,13 @@
 .container-narrow {
   margin: 0 auto;
   max-width: 700px; 
-  background-color: black}
+  }
 
 .container-narrow > hr {
   margin: 30px 0; }
 
 .navbar .nav {
-  float: right; 
-  background-color: #91b1cc;}
+  float: right; }
 
 /* The sidebar menu */
 .sidenav {
