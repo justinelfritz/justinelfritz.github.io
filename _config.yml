@@ -8,7 +8,8 @@ highlighter: rouge
 # Themes are encouraged to use these universal variables
 # so be sure to set them if your theme uses them.
 #
-title : Public repository for pet projects in physics, numerics, and analysis
+#title : Public repository for pet projects in physics, numerics, and analysis
+title : [frontpage]
 author :
   name : J.G. Elfritz
   email : justin.elfritz@gmail.com
