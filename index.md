@@ -1,7 +1,7 @@
 ---
 layout: page
 title: J.G. Elfritz
-tagline: 
+tagline: .
 description: Site build following K.Broman template for github.io
 ---
 
