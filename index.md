@@ -7,7 +7,7 @@ description: Site build following K.Broman template for github.io
 
 
 
-<span style="font-family:Georgia; font-size:1.2em;">
+<span style="font-family:Georgia; font-size:1.5em;">
 
 Public repo for code snippets and related notes for projects in physics, numerics, and analysis.
 
