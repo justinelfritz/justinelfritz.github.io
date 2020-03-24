@@ -4,8 +4,11 @@ title: about
 description: general synopsis and motivation
 ---
 
-<a href="https://www.linkedin.com/in/justinelfritz/"><img src="https://mag06.github.io/linkedin_circ.svg" width="64" height="64"></a>
-
 This page is under construction. 
 
-jge 11 Mar 2020.
+jge 23 Mar 2020.
+
+<a href="https://www.linkedin.com/in/justinelfritz/"><img src="https://mag06.github.io/linkedin_circ.svg" width="50" height="50"></a>
+
+<a href="https://https://www.researchgate.net/profile/Justin_Elfritz"><img src="https://mag06.github.io/researchgate-circle.png" width="50" height="50"></a>
+
