@@ -37,24 +37,47 @@ description: general synopsis and motivation
 
 (**2017**) **Observation proposal:** *XMM-Newton* 159ks exposure time, *Probing magnetic field re-emergence through X-ray observations of radio pulsars*, (secondary proposer).   
 
-(**2017**) **EU COST proposal:** Short Term Scientific Mission grant (STSM), *3D neutron star evolution with externally-driven, warped magnetospheres*, University of Alicante; Alicante, Spain. 
+(**2017**) **EU COST grant:** Short Term Scientific Mission (STSM), *3D neutron star evolution with externally-driven, warped magnetospheres*, University of Alicante; Alicante, Spain. 
 
 (**2016**) **Volunteer activity:** Instructor, *Space Exploration and Astronomy*, Programma IMC on Tour, Stichting IMC; Hilversum, The Netherlands.
 
-(**2015**) **EU COST proposal:** Short Term Scientific Mission grant (STSM), *Validation and testing of 3D neutron star magneto-thermal code*, University of Alicante; Alicante, Spain.
+(**2015**) **EU COST grant:** Short Term Scientific Mission (STSM), *Validation and testing of 3D neutron star magneto-thermal code*, University of Alicante; Alicante, Spain.
 
-(**2014**) **EU COST workshop:** *6<sup>th</sup> Workshop on Neutron Star Formation and Evolution*; University of Bonn, Bonn, Germany.
+(**2014**) **EU COST workshop grant:** *6<sup>th</sup> Workshop on Neutron Star Formation and Evolution*; University of Bonn, Bonn, Germany.
 
-(**2014**) **EU COST workshop:** *The Many Faces of Compact Stars*; Barcelona, Spain.
+(**2014**) **EU COST workshop grant:** *The Many Faces of Compact Stars*; Barcelona, Spain.
 
-(**2012**) **ORAU attendee proposal:** *62<sup>nd</sup> Meeting of Nobel Laureates and Young Researchers*; Lindau, Germany.
+(**2012**) **ORAU/ORNL grant:** *62<sup>nd</sup> Meeting of Nobel Laureates and Young Researchers*; Lindau, Germany.
 
-(**2012**) **UCAR attendee proposal:** *Heliophysics Graduate Summer School*; University of Colorado - Boulder, USA.
+(**2012**) **UCAR/VSP attendee grant:** *Heliophysics Graduate Summer School*; University of Colorado - Boulder, USA.
 
-(**2011**) **LANL attendee proposal:** *Los Alamos National Laboratory Space Weather Summer School*; Los Alamos National Lab, USA.
+(**2011**) **LANL attendee grant:** *Los Alamos National Laboratory Space Weather Summer School*; Los Alamos National Lab, USA.
 
 (**2011**) **Workshop attendee:** *1<sup>st</sup> Joint THEMIS-TWINS Science Workshop*; University of California - Los Angeles, USA.
 
 
 ### Invited Talks and Conference Presentations
 
+(**2016**) *3D Hall evolution of neutron star magnetic fields*, J.G. Elfritz *et al.*, Annual NewCompStar Conference; Istanbul, Turkey.
+
+(**2016**) *3D magnetic evolution in neutron stars*, J.G. Elfritz *et al.*, NewCompStar Working Group (Magnetic Fields in Neutron Starsr); Alicante, Spain.
+
+(**2015**) *Imaging geospace and the heliosphere by charge exchange*, J.G. Elfritz, Space Sciences Institute, Autonomous University of Barcelona; Barcelona, Spain.
+
+(**2015**) *Flux Expulsion from Neutron Star Cores: Results from 2D Hall Simulations*, J.G. Elfritz *et al.*, Annual NewCompStar Conference; Budapest, Hungary.
+
+(**2015**) *Imaging geospace and the heliosphere by charge exchange*, J.G. Elfritz, Anton Pannekoek Institute, University of Amsterdam; Amsterdam, The Netherlands.
+
+(**2013**) *Parametric Study of Magnetospheric Ion Temperatures Using TWINS ENA Data and BATS-R-US Simulations*, J.G. Elfritz *et al.*, AGU Fall Meeting; San Francisco, CA, USA.
+
+(**2012**) *Storm-time Ion Temperatures in the Magnetosphere: A Comparison of CME-driven and CIR/HSS-driven Events Using CRCM*, J.G. Elfritz *et al.*, AGU Fall Meeting; San Francisco, CA, USA.
+
+(**2012**) *CRCM Simulation Results Using TWINS-derived Ion Temperature Boundary Conditions*, J.G. Elfritz *et al.*, GEM Annual Meeting; Snowmass, CO, USA.
+
+(**2011**) *The Impacts of Ion Energy Spectra on PRC Formation and Plume Evolution*, J.G. Elfritz *et al.*, AGU Fall Meeting; San Franciso, CA, USA.
+
+(**2011**) *Sensitivity Analysis for L\* *, J.G. Elfritz and J. Niehof, LANL Space Weather Summer School; Los Alamos National Laboratory, NM, USA.
+
+(**2011**) *CRCM Simulations Using Ion Temperature Boundary Conditions from TWINS and IMAGE*, J.G. Elfritz *et al.*, Joint GEM/CEDAR Meeting; Santa Fe, NM, USA.
+
+(**2010**) *Hybrid Modeling of Alfvén Wave Propagation in a Helicon Plasma Source*, J.G. Elfritz *et al.*, APS-DPP Annual Meeting; Chicago, IL, USA.
