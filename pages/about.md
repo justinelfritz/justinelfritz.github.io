@@ -26,7 +26,11 @@ This page is under construction, and receives semi-regular updates.
 
 **(2012)** [*Inner magnetosphere convection and magnetotail structure of hot ions imaged by ENA during a HSS-driven storm*](https://ui.adsabs.harvard.edu/abs/2012JGRA..117.0L06K), A.M. Keesee, J.G. Elfritz, D.J. McComas, E.E. Scime, *Journal of Geophysical Research*, 117, A9.
 
+### Other publications
 
+(**2014**) [*Ion Temperatures in Earth's Inner Magnetosphere: Ring Current Dynamics, Transient Effects, and Data-Model Comparisons*](https://researchrepository.wvu.edu/etd/563/), J.G. Elfritz, Ph.D. Thesis, *West Virginia University*. 
 
+(**2011**) [*Sensitivity Analysis for L\* *], J.G. Elfritz, J. Niehof, *Los Alamos Space Weather Research Reports*. 
 
+---
 updated jge 24 Jan 2021.
