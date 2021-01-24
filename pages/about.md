@@ -35,16 +35,26 @@ description: general synopsis and motivation
 
 ### Awards and Development
 
-(**2017**) **Observation proposal**//**XMM-Newton** 159ks exposure time, *Probing magnetic field re-emergence through X-ray observations of radio pulsars*, (secondary proposer).   
+(**2017**) **Observation proposal:** *XMM-Newton* 159ks exposure time, *Probing magnetic field re-emergence through X-ray observations of radio pulsars*, (secondary proposer).   
 
-(**2017**) **EU COST proposal** Short Term Scientific Mission grant (STSM), *3D neutron star evolution with externally-driven, warped magnetospheres*, University of Alicante; Alicante, Spain. 
+(**2017**) **EU COST proposal:** Short Term Scientific Mission grant (STSM), *3D neutron star evolution with externally-driven, warped magnetospheres*, University of Alicante; Alicante, Spain. 
 
-(**2016**) **Volunteer activity** Astronomy Instructor, *Space Exploration for children of migrants*, Programma IMC on Tour, Stichting IMC; Hilversum, The Netherlands.
+(**2016**) **Volunteer activity:** Instructor, *Space Exploration and Astronomy*, Programma IMC on Tour, Stichting IMC; Hilversum, The Netherlands.
 
-(**2015**) **EU COST proposal** Short Term Scientific Mission grant (STSM), *Validation and testing of 3D neutron star magneto-thermal code*, University of Alicante; Alicante, Spain.
+(**2015**) **EU COST proposal:** Short Term Scientific Mission grant (STSM), *Validation and testing of 3D neutron star magneto-thermal code*, University of Alicante; Alicante, Spain.
+
+(**2014**) **EU COST workshop:** *6<sup>th</sup> Workshop on Neutron Star Formation and Evolution*; University of Bonn, Bonn, Germany.
+
+(**2014**) **EU COST workshop:** *The Many Faces of Compact Stars*; Barcelona, Spain.
+
+(**2012**) **ORAU attendee proposal:** *62<sup>nd</sup> Meeting of Nobel Laureates and Young Researchers*; Lindau, Germany.
+
+(**2012**) **UCAR attendee proposal:** *Heliophysics Graduate Summer School*; University of Colorado - Boulder, USA.
+
+(**2011**) **LANL attendee proposal:** *Los Alamos National Laboratory Space Weather Summer School*; Los Alamos National Lab, USA.
+
+(**2011**) **Workshop attendee:** *1<sup>st</sup> Joint THEMIS-TWINS Science Workshop*; University of California - Los Angeles, USA.
 
 
+### Invited Talks and Conference Presentations
 
-### Invited Talks
-
-(**2014**) **EU COST presentation** 6<sup>th</sup> Workshop on Neutron Star Formation and Evolution, ...
