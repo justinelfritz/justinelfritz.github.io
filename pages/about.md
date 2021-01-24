@@ -8,10 +8,11 @@ description: general synopsis and motivation
 
 This page is under construction, and receives semi-regular updates. 
 
-## Peer-reviewed publications
-### Publications
-| (2018) [*Discovery of X-Rays from the Old and Faint Pulsar J1154-6250*](https://ui.adsabs.harvard.edu/abs/2018ApJ...865..116I), A.P. Igoshev, S.S. Tsygankov, M.Rigoselli, *et al.*, The Astrophysical Journal, 865, 2. 
-
+| ### Peer-reviewed publications |
+| ----- | 
+| (2018) [*Discovery of X-Rays from the Old and Faint Pulsar J1154-6250*](https://ui.adsabs.harvard.edu/abs/2018ApJ...865..116I), A.P. Igoshev, S.S. Tsygankov, M.Rigoselli, *et al.*, The Astrophysical Journal, 865, 2. |
+| ----- | 
+| (2018) ... |
 
 
 
