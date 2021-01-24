@@ -6,7 +6,6 @@ description: general synopsis and motivation
 
 <a href="https://www.linkedin.com/in/justinelfritz/"><img src="https://mag06.github.io/linkedin_circ.svg" width="50" height="50"></a> <a href="https://www.researchgate.net/profile/Justin_Elfritz"><img src="https://mag06.github.io/ResearchGate2.png" width="50" height="50"></a> <a href="https://scholar.google.com/citations?user=TikZtJcAAAAJ&hl=en"><img src="https://mag06.github.io/google_cite1.png" width="50" height="50"></a> 
 
-This page is under construction, and receives semi-regular updates. 
 
 ### Peer-reviewed publications
 
@@ -32,3 +31,18 @@ This page is under construction, and receives semi-regular updates.
 
 (**2011**) [*Sensitivity Analysis for L\**](https://www.lanl.gov/projects/national-security-education-center/space-earth-center/space-weather-school/papers-reports.php), J.G. Elfritz, J. Niehof, *Los Alamos Space Weather Research Reports*. 
 
+### Awards and Development
+
+(**2017**) **Observation proposal**//**XMM-Newton** 159ks exposure time, *Probing magnetic field re-emergence through X-ray observations of radio pulsars*, (secondary proposer).   
+
+(**2017**) **EU COST proposal** Short Term Scientific Mission grant (STSM), *3D neutron star evolution with externally-driven, warped magnetospheres*, University of Alicante; Alicante, Spain. 
+
+(**2016**) **Volunteer activity** Astronomy Instructor, *Space Exploration for children of migrants*, Programma IMC on Tour, Stichting IMC; Hilversum, The Netherlands.
+
+(**2015**) **EU COST proposal** Short Term Scientific Mission grant (STSM), *Validation and testing of 3D neutron star magneto-thermal code*, University of Alicante; Alicante, Spain.
+
+
+
+### Invited Talks
+
+(**2014**) **EU COST presentation** 6<sup>th<\sup> Workshop on Neutron Star Formation and Evolution, ...
