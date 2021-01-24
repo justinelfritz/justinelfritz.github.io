@@ -8,11 +8,14 @@ description: general synopsis and motivation
 
 This page is under construction, and receives semi-regular updates. 
 
-| ### Peer-reviewed publications |
-| ----- | 
-| (2018) [*Discovery of X-Rays from the Old and Faint Pulsar J1154-6250*](https://ui.adsabs.harvard.edu/abs/2018ApJ...865..116I), A.P. Igoshev, S.S. Tsygankov, M.Rigoselli, *et al.*, The Astrophysical Journal, 865, 2. |
-| ----- | 
-| (2018) ... |
+### Peer-reviewed publications
+
+(2018) [*Discovery of X-Rays from the Old and Faint Pulsar J1154-6250*](https://ui.adsabs.harvard.edu/abs/2018ApJ...865..116I), A.P. Igoshev, S.S. Tsygankov, M.Rigoselli, *et al.*, The Astrophysical Journal, 865, 2.
+
+(2018) [*Nuclear physics of the outer layers of accreting neutron stars*](https://ui.adsabs.harvard.edu/abs/2018JPhG...45i3001M), Z.Meisel, A.Deibel, L.Keek, P.Shternin, J.G.Elfritz, Journal of Physics G: Nuclear and Particle Physics, 45, 9. 
+
+(2017) [*Chandra monitoring of the Galactic Centre magnetar SGR J1745-2900 during the initial 3.5 years of outburst decay*](https://ui.adsabs.harvard.edu/abs/2017MNRAS.471.1819C), F.Coti Zelati, N.Rea, J.A.Pons, *et al.*, Monthly Notices of the Royal Astronomical Society, 471, 2.
+
 
 
 
