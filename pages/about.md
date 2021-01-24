@@ -31,6 +31,8 @@ description: general synopsis and motivation
 
 (**2011**) [*Sensitivity Analysis for L\**](https://www.lanl.gov/projects/national-security-education-center/space-earth-center/space-weather-school/papers-reports.php), J.G. Elfritz, J. Niehof, *Los Alamos Space Weather Research Reports*. 
 
+---
+
 ### Awards and Development
 
 (**2017**) **Observation proposal**//**XMM-Newton** 159ks exposure time, *Probing magnetic field re-emergence through X-ray observations of radio pulsars*, (secondary proposer).   
@@ -45,4 +47,4 @@ description: general synopsis and motivation
 
 ### Invited Talks
 
-(**2014**) **EU COST presentation** 6<sup>th<\sup> Workshop on Neutron Star Formation and Evolution, ...
+(**2014**) **EU COST presentation** 6<sup>th</sup> Workshop on Neutron Star Formation and Evolution, ...
