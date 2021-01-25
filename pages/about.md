@@ -76,7 +76,7 @@ description: general synopsis and motivation
 
 (**2011**) *The Impacts of Ion Energy Spectra on PRC Formation and Plume Evolution*, J.G. Elfritz *et al.*, AGU Fall Meeting; San Franciso, CA, USA.
 
-(**2011**) *Sensitivity Analysis for L\* *, J.G. Elfritz and J. Niehof, LANL Space Weather Summer School; Los Alamos National Laboratory, NM, USA.
+(**2011**) *Sensitivity Analysis for L\**, J.G. Elfritz and J. Niehof, LANL Space Weather Summer School; Los Alamos National Laboratory, NM, USA.
 
 (**2011**) *CRCM Simulations Using Ion Temperature Boundary Conditions from TWINS and IMAGE*, J.G. Elfritz *et al.*, Joint GEM/CEDAR Meeting; Santa Fe, NM, USA.
 
