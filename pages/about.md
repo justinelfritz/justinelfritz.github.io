@@ -8,9 +8,9 @@ description: general synopsis and motivation
 
 ### Scientific career
 
-#### **IBM** - <span style="font-size:0.9em; font-style:italic; font-color:#804d00">Data Scientist</span>
+#### **IBM** - <span style="font-size:0.9em; font-style:italic; color:#804d00">Data Scientist</span>
 
-#### **EOXS Scientific** - <span style="font-size:0.8em; font-style:italic; font-color:#ffffff">Founder</span>
+#### **EOXS Scientific** - <span style="font-size:0.8em; font-style:italic; color:#ffffff">Founder</span>
 
 #### **Universiteit van Amsterdam** - *Post-Doctoral Researcher*
 
