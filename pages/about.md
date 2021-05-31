@@ -8,10 +8,10 @@ description: general synopsis and motivation
 
 ### Scientific career
 
-#### **IBM** - <span style="font-size:0.6em; font-style:italic">Data Scientist</span>
+#### **IBM** - <span style="font-size:0.9em; font-style:italic">Data Scientist</span>
 lipsum lkjdfo alskdf asdoiu asd
 
-#### **EOXS Scientific** - <span style="font-size:0.4em; font-style:italic">Founder</span>
+#### **EOXS Scientific** - <span style="font-size:0.8em; font-style:italic">Founder</span>
 
 #### **Universiteit van Amsterdam** - *Post-Doctoral Researcher*
 
