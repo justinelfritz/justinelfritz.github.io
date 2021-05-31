@@ -12,16 +12,16 @@ description: general synopsis and motivation
 + lipsum iota gdkl sodj ds
 
 #### **EOXS Scientific** - <span style="font-size:0.9em; font-style:italic; color:#804d00">Founder</span>
-> asldkfj 
++ asldkfj 
 
 #### **Universiteit van Amsterdam** - <span style="font-size:0.9em; color:#804d00; font-style:italic">Post-Doctoral Researcher</span>
-;nbsp ;nbsp ;nbsp ;nbsp ;nbsp ;nbsp lkdf lipsum iot delta kdou ajkdjf
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp lkdf lipsum iot delta kdou ajkdjf
 
 #### **West Virginia University** - <span style="font-size:0.9em; color:#804d00; font-style:italic">Graduate Research Assistant</span>
->
+
 
 #### **Kimball Physics** - <span style="font-size:0.9em; color:#804d00; font-style:italic">Experimental Physicist</span>
->
+
 
 ---
 
