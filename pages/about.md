@@ -8,9 +8,12 @@ description: general synopsis and motivation
 
 ### Scientific career
 
-#### **IBM** - *Data Scientist*
+#### **IBM**
+*Data Scientist*
+lipsum lkjdfo alskdf asdoiu asd
 
-#### **EOXS Scientific** - *Founder*
+#### **EOXS Scientific**
+*Founder*
 
 #### **Universiteit van Amsterdam** - *Post-Doctoral Researcher*
 
