@@ -73,6 +73,7 @@ description: general synopsis and motivation
 
 (**2011**) **Workshop attendee:** *1<sup>st</sup> Joint THEMIS-TWINS Science Workshop*; University of California - Los Angeles, USA.
 
+---
 
 ### Invited Talks and Conference Presentations
 
