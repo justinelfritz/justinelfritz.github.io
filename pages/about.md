@@ -6,20 +6,26 @@ description: general synopsis and motivation
 
 <a href="https://www.linkedin.com/in/justinelfritz/"><img src="https://mag06.github.io/linkedin_circ.svg" width="50" height="50"></a> <a href="https://www.researchgate.net/profile/Justin_Elfritz"><img src="https://mag06.github.io/ResearchGate2.png" width="50" height="50"></a> <a href="https://scholar.google.com/citations?user=TikZtJcAAAAJ&hl=en"><img src="https://mag06.github.io/google_cite1.png" width="50" height="50"></a> 
 
-### Scientific career
+### Professional Experience
 
 #### **IBM** - <span style="font-size:0.9em; font-style:italic; color:#804d00">Data Scientist</span>
+> lipsum iota gdkl sodj ds
 
 #### **EOXS Scientific** - <span style="font-size:0.9em; font-style:italic; color:#804d00">Founder</span>
+> asldkfj 
 
 #### **Universiteit van Amsterdam** - <span style="font-size:0.9em; color:#804d00; font-style:italic">Post-Doctoral Researcher</span>
+>
 
 #### **West Virginia University** - <span style="font-size:0.9em; color:#804d00; font-style:italic">Graduate Research Assistant</span>
+>
 
-#### **Kimball Physics** - <span style="font-size:0.9em; color:#804d00; font-style:italc">Experimental Physicist</span>
+#### **Kimball Physics** - <span style="font-size:0.9em; color:#804d00; font-style:italic">Experimental Physicist</span>
+>
 
+---
 
-### Peer-reviewed publications
+### Peer-reviewed Publications
 
 (**2018**) [*Discovery of X-Rays from the Old and Faint Pulsar J1154-6250*](https://ui.adsabs.harvard.edu/abs/2018ApJ...865..116I), A.P. Igoshev, S.S. Tsygankov, M.Rigoselli, *et al.*, *The Astrophysical Journal*, 865, 2.
 
