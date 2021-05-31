@@ -10,11 +10,11 @@ description: general synopsis and motivation
 
 #### **IBM** - <span style="font-size:0.9em; font-style:italic; color:#804d00">Data Scientist</span>
 
-#### **EOXS Scientific** - <span style="font-size:0.8em; font-style:italic; color:#ffffff">Founder</span>
+#### **EOXS Scientific** - <span style="font-size:0.8em; font-style:italic; color:#eeeeee">Founder</span>
 
-#### **Universiteit van Amsterdam** - *Post-Doctoral Researcher*
+#### **Universiteit van Amsterdam** - <span style="font-size:0.9em; color:#ac1849; font-style:italic">Post-Doctoral Researcher</span>
 
-#### **West Virginia University** - *Graduate Research Assistant*
+#### **West Virginia University** - <span style="font-size=0.9em; color:#83d1f6; font-style:italic">Graduate Research Assistant</span>
 
 #### **Kimball Physics** - *Experimental Physicist*
 
