@@ -8,19 +8,19 @@ description: general synopsis and motivation
 
 ### Professional Experience
 
-#### <span style="font-family:Garamond; font-sytle:bold">IBM</span> - <span style="font-size:0.9em; font-style:italic; color:#804d00">Data Scientist</span>
+#### <span style="font-family:Garamond; font-sytle:bold; font-size:1.1em">IBM</span> - <span style="font-size:0.9em; font-style:italic; color:#804d00">Data Scientist</span>
 <!--- + (2021/current) -->
 
-#### <span style="font-family:Garamond; font-style:bold">EOXS Scientific</span> - <span style="font-size:0.9em; font-style:italic; color:#804d00">Founder</span>
+#### <span style="font-family:Garamond; font-style:bold; font-size:1.0em">EOXS Scientific</span> - <span style="font-size:0.9em; font-style:italic; color:#804d00">Founder</span>
 <!--- + (2018/2021) -->
 
-#### **Universiteit van Amsterdam** - <span style="font-size:0.9em; color:#804d00; font-style:italic">Post-Doctoral Researcher</span>
+#### <span style="font-family:Garamond; font-sytle:bold; font-size:1.1em">Univ. van Amsterdam</span> - <span style="font-size:0.9em; color:#804d00; font-style:italic">Post-Doctoral Researcher</span>
 <!--- + (2014/2017) -->
 
-#### **West Virginia University** - <span style="font-size:0.9em; color:#804d00; font-style:italic">Graduate Research Assistant</span>
+#### <span style="font-family:Garamond; font-sytle:bold; font-size:1.1em">West Virginia Univ.</span> - <span style="font-size:0.9em; color:#804d00; font-style:italic">Graduate Research Assistant</span>
 <!--- + (2009/2014) -->
 
-#### **Kimball Physics** - <span style="font-size:0.9em; color:#804d00; font-style:italic">Experimental Physicist</span>
+#### <span style="font-family:Garamond; font-sytle:bold; font-size:1.1em">Kimball Physics</span> - <span style="font-size:0.9em; color:#804d00; font-style:italic">Experimental Physicist</span>
 <!--- + (2007/2009) -->
 
 ---
