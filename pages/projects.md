@@ -4,7 +4,7 @@ title: projects
 description: collection point for overviews of individual projects
 ---
 
-<!---Under construction. --->
+Under construction.
 
 <!---
 Currently in preparation are writeups on ongoing theoretical and computational projects related to the internal composition of neutron stars, magnetic field generation and time-variability in plasmas, and analyses and interpretation of uniquely American socio-economic questions.
@@ -13,4 +13,4 @@ Currently in preparation are writeups on ongoing theoretical and computational p
 
 
 
-<!---jge 31 May 2021.--->
+jge 31 May 2021.
