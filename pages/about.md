@@ -9,19 +9,19 @@ description: general synopsis and motivation
 ### Professional Experience
 
 #### IBM - <span style="font-size:0.9em; font-style:italic; color:#804d00">Data Scientist</span>
-+ (**2021--curr.**)
++ (2021--curr.)
 
 #### EOXS Scientific - <span style="font-size:0.9em; font-style:italic; color:#804d00">Founder</span>
-+ (**2018--2021**)
++ (2018--2021)
 
 #### Univ. van Amsterdam - <span style="font-size:0.9em; color:#804d00; font-style:italic">Post-Doctoral Researcher</span>
-+ (**2014--2017**)
++ (2014--2017)
 
 #### West Virginia Univ. - <span style="font-size:0.9em; color:#804d00; font-style:italic">Graduate Research Assistant</span>
-+ (**2009--2014**)
++ (2009--2014)
 
 #### Kimball Physics - <span style="font-size:0.9em; color:#804d00; font-style:italic">Experimental Physicist</span>
-+ (**2007--2009**)
++ (2007--2009)
 
 ---
 
