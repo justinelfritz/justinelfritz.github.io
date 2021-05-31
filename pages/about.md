@@ -8,16 +8,16 @@ description: general synopsis and motivation
 
 ### Scientific career
 
-##**IBM** - Data Scientist
+## **IBM** - Data Scientist
 
-##**EOXS Scientific**  
+## **EOXS Scientific**  
 Founder
 
-(2014 - ) ##**Universiteit van Amsterdam** - Post-Doctoral Researcher
+(2014 - ) ## **Universiteit van Amsterdam** - Post-Doctoral Researcher
 
-(2009 - ) ##**West Virginia University** - Graduate Research Assistant
+(2009 - ) ## **West Virginia University** - Graduate Research Assistant
 
-(2007 - ) ##**Kimball Physics** - Experimental Physicist
+(2007 - ) ## **Kimball Physics** - Experimental Physicist
 
 
 ### Peer-reviewed publications
