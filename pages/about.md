@@ -9,7 +9,7 @@ description: general synopsis and motivation
 ### Professional Experience
 
 #### IBM - <span style="font-size:0.9em; font-style:italic; color:#804d00">Data Scientist</span>
-+ (2021/current)
++ <span style="font-family:'Courier New'">(2021/curr.)</span>
 
 #### EOXS Scientific - <span style="font-size:0.9em; font-style:italic; color:#804d00">Founder</span>
 + (2018/2021)
