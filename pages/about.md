@@ -8,15 +8,15 @@ description: general synopsis and motivation
 
 ### Scientific career
 
-#### **IBM** - <span style="font-size:0.9em; font-style:italic; color:#FFC300">Data Scientist</span>
+#### **IBM** - <span style="font-size:0.9em; font-style:italic; color:#804d00">Data Scientist</span>
 
-#### **EOXS Scientific** - <span style="font-size:0.8em; font-style:italic; color:#6d3d4d">Founder</span>
+#### **EOXS Scientific** - <span style="font-size:0.9em; font-style:italic; color:#804d00">Founder</span>
 
-#### **Universiteit van Amsterdam** - <span style="font-size:0.9em; color:#ffc300; font-style:italic">Post-Doctoral Researcher</span>
+#### **Universiteit van Amsterdam** - <span style="font-size:0.9em; color:#804d00; font-style:italic">Post-Doctoral Researcher</span>
 
-#### **West Virginia University** - <span style="font-size:0.9em; color:#ffc300; font-style:italic">Graduate Research Assistant</span>
+#### **West Virginia University** - <span style="font-size:0.9em; color:#804d00; font-style:italic">Graduate Research Assistant</span>
 
-#### **Kimball Physics** - <span style="font-size:0.9em; color:#ffc300; font-style:italc">Experimental Physicist</span>
+#### **Kimball Physics** - <span style="font-size:0.9em; color:#804d00; font-style:italc">Experimental Physicist</span>
 
 
 ### Peer-reviewed publications
