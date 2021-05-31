@@ -9,13 +9,13 @@ description: general synopsis and motivation
 ### Professional Experience
 
 #### **IBM** - <span style="font-size:0.9em; font-style:italic; color:#804d00">Data Scientist</span>
-> lipsum iota gdkl sodj ds
++ lipsum iota gdkl sodj ds
 
 #### **EOXS Scientific** - <span style="font-size:0.9em; font-style:italic; color:#804d00">Founder</span>
 > asldkfj 
 
 #### **Universiteit van Amsterdam** - <span style="font-size:0.9em; color:#804d00; font-style:italic">Post-Doctoral Researcher</span>
->
+;nbsp ;nbsp ;nbsp ;nbsp ;nbsp ;nbsp lkdf lipsum iot delta kdou ajkdjf
 
 #### **West Virginia University** - <span style="font-size:0.9em; color:#804d00; font-style:italic">Graduate Research Assistant</span>
 >
