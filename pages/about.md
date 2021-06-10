@@ -14,9 +14,9 @@ description: general synopsis and motivation
 
 #### Univ. van Amsterdam - <span style="font-size:0.9em; color:#804d00; font-style:italic">Post-Doctoral Researcher</span> <span style="font-size:0.75em; font-style:italic"> (2014--2017) </span>
 
-<span style="font-size:0.75em; font-style:italic"> [2009--2014] </span> #### West Virginia Univ. - <span style="font-size:0.9em; color:#804d00; font-style:italic">Graduate Research Assistant</span> 
+#### West Virginia Univ. - <span style="font-size:0.9em; color:#804d00; font-style:italic">Graduate Research Assistant</span> <span style="font-size:0.80em; font-style:italic"> (2009--2014) </span>
 
-<span style="font-size:0.80em> [2007--2009]</span>#### Kimball Physics - <span style="font-size:0.9em; color:#804d00; font-style:italic">Experimental Physicist</span> 
+#### Kimball Physics - <span style="font-size:0.9em; color:#804d00; font-style:italic">Experimental Physicist</span> <span style="font-size:0.75em; font-style:italic"> (2007--2009) </span>
 
 ---
 
