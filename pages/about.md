@@ -8,9 +8,9 @@ description: general synopsis and motivation
 
 ### Professional Experience
 
-#### IBM - <span style="font-size:0.9em; font-style:italic; color:#804d00">Data Scientist</span> *(2021--curr.)*
+#### IBM - <span style="font-size:0.9em; font-style:italic; color:#804d00">Data Scientist</span> <span style="font-size:0.7em; font-style:italic">(2021--curr.)</span>
 
-#### EOXS Scientific - <span style="font-size:0.9em; font-style:italic; color:#804d00">Founder</span> *(2018--2021)*
+#### EOXS Scientific - <span style="font-size:0.9em; font-style:italic; color:#804d00">Founder</span> <span style="font-size=0.7em; font-style:italic">(2018--2021)</span>
 
 #### Univ. van Amsterdam - <span style="font-size:0.9em; color:#804d00; font-style:italic">Post-Doctoral Researcher</span>
 + (2014--2017)
