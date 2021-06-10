@@ -18,6 +18,14 @@ description: general synopsis and motivation
 
 #### Kimball Physics - <span style="font-size:0.9em; color:#804d00; font-style:italic">Experimental Physicist</span> <span style="font-size:0.75em; font-style:italic"> (2007--2009) </span>
 
+
+
+### Education
+
+##### Ph.D., Physics, 2014, *West Virginia University*
+##### M.Sc., Physics, 2012, *West Virginia University*
+##### B.Sc., Physics, 2007, *Frostburg State University*
+
 ---
 
 ### Peer-reviewed Publications
