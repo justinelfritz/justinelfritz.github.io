@@ -22,9 +22,9 @@ description: general synopsis and motivation
 
 ### Education
 
-##### Ph.D., Physics, 2014, *West Virginia University*
-##### M.Sc., Physics, 2012, *West Virginia University*
-##### B.Sc., Physics, 2007, *Frostburg State University*
+#### Ph.D., Physics, 2014, *West Virginia University*
+#### M.Sc., Physics, 2012, *West Virginia University*
+#### B.Sc., Physics, 2007, *Frostburg State University*
 
 ---
 
@@ -56,11 +56,12 @@ description: general synopsis and motivation
 
 ### Awards and Development
 
+
 (**2017**) **Observation proposal:** *XMM-Newton* 159ks exposure time, *Probing magnetic field re-emergence through X-ray observations of radio pulsars*, (secondary proposer).   
 
 (**2017**) **EU COST grant:** Short Term Scientific Mission (STSM), *3D neutron star evolution with externally-driven, warped magnetospheres*, University of Alicante; Alicante, Spain. 
 
-(**2016**) **Volunteer activity:** Instructor, *Space Exploration and Astronomy*, Programma IMC on Tour, Stichting IMC; Hilversum, The Netherlands.
+(**2016**) **Volunteer Instructor:** *Space Exploration and Astronomy*, Programma IMC on Tour, Stichting IMC; Hilversum, The Netherlands.
 
 (**2015**) **EU COST grant:** Short Term Scientific Mission (STSM), *Validation and testing of 3D neutron star magneto-thermal code*, University of Alicante; Alicante, Spain.
 
@@ -72,7 +73,7 @@ description: general synopsis and motivation
 
 (**2012**) **UCAR/VSP attendee grant:** *Heliophysics Graduate Summer School*; University of Colorado - Boulder, USA.
 
-(**2011**) **LANL attendee grant:** *Los Alamos National Laboratory Space Weather Summer School*; Los Alamos National Lab, USA.
+(**2011**) **LANL Vela Fellowship:** *Los Alamos National Laboratory Space Weather Summer School*; Los Alamos National Lab, USA.
 
 (**2011**) **Workshop attendee:** *1<sup>st</sup> Joint THEMIS-TWINS Science Workshop*; University of California - Los Angeles, USA.
 
