@@ -10,13 +10,13 @@ description: general synopsis and motivation
 
 #### IBM - <span style="font-size:0.9em; font-style:italic; color:#804d00">Data Scientist</span> <span style="font-size:0.75em; font-style:italic">(2021--curr.)</span>
 
-#### EOXS Scientific - <span style="font-size:0.9em; font-style:italic; color:#804d00">Founder</span> <span style="font-size=0.75em; font-style:italic">(2018--2021)</span>
+#### EOXS Scientific - <span style="font-size:0.9em; font-style:italic; color:#804d00">Founder</span> <span style="font-size:0.75em; font-style:italic">(2018--2021)</span>
 
-#### Univ. van Amsterdam - <span style="font-size:0.9em; color:#804d00; font-style:italic">Post-Doctoral Researcher</span> <span style="font-size=0.75em; font-style:italic"> (2014--2017) </span>
+#### Univ. van Amsterdam - <span style="font-size:0.9em; color:#804d00; font-style:italic">Post-Doctoral Researcher</span> <span style="font-size:0.75em; font-style:italic"> (2014--2017) </span>
 
-#### West Virginia Univ. - <span style="font-size:0.9em; color:#804d00; font-style:italic">Graduate Research Assistant</span> <span style="font-size=0.75em; font-style:italic"> (2009--2014) </span>
+<span style="font-size:0.75em; font-style:italic"> [2009--2014] </span> #### West Virginia Univ. - <span style="font-size:0.9em; color:#804d00; font-style:italic">Graduate Research Assistant</span> 
 
-#### Kimball Physics - <span style="font-size:0.9em; color:#804d00; font-style:italic">Experimental Physicist</span> <span style="font-size=0.75em; font-style:italic"> (2007--2009) </span>
+<span style="font-size:0.80em> [2007--2009]</span>#### Kimball Physics - <span style="font-size:0.9em; color:#804d00; font-style:italic">Experimental Physicist</span> 
 
 ---
 
