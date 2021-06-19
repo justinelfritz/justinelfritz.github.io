@@ -6,7 +6,7 @@ description: collection point for overviews of individual projects
 
 Under construction.
 
-[Re-thinking sourdough recipes.](baking.html)
+<!--[Re-thinking sourdough recipes.](baking.html)-->
 
 <!---
 Currently in preparation are writeups on ongoing theoretical and computational projects related to the internal composition of neutron stars, magnetic field generation and time-variability in plasmas, and analyses and interpretation of uniquely American socio-economic questions.
