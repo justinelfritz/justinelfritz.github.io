@@ -8,9 +8,11 @@ There is a foundational legacy problem within the sourdough baking literature, w
 
 <img src="https://render.githubusercontent.com/render/math?math=f_{auto}=2W/(1%2BH)(1%2BI)">
 
-<img src="https://render.githubusercontent.com/render/math?math=\large L=\frac{2IW}{(1%2BI)(1%2BH)">
+<img src="https://render.githubusercontent.com/render/math?math= \large L=\frac{2IW}{(1%2BI)(1%2BH)">
 
 <img src="https://render.githubusercontent.com/render/math?math=L=2IW\div(1%2BI)(1%2BH)">
+
+...
 
 
 jge 18 June 2021.
