@@ -25,9 +25,9 @@ Take the following definitions as our starting point, keeping in mind that we us
 
 First choose your desired weight <img src="https://render.githubusercontent.com/render/math?math=W">. Now choose your hydration <img src="https://render.githubusercontent.com/render/math?math=H"> and inoculation <img src="https://render.githubusercontent.com/render/math?math=I"> based on your environment and preferences. The first step is to compute <img src="https://render.githubusercontent.com/render/math?math=f_{auto}"> and <img src="https://render.githubusercontent.com/render/math?math=h_{auto}"> for your autolyse:
 
-<img src="https://render.githubusercontent.com/render/math?math=f_{auto}=2W/(1%2BH)(1%2BI)">
+<img src="https://render.githubusercontent.com/render/math?math=f_{auto}=W/(1%2BH)(1%2BI)">
 
-<img src="https://render.githubusercontent.com/render/math?math=h_{auto}=f_{auto}(H(1%2BI)-I)">
+<img src="https://render.githubusercontent.com/render/math?math=h_{auto}=f_{auto}[H(1%2BI)-I]">
 
 The amount of levain needed is then
 
