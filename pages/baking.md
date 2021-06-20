@@ -22,11 +22,11 @@ Take the following definitions as our starting point, keeping in mind that we us
 
 #### Algorithm
 
-<img src="https://render.githubusercontent.com/render/math?math=f_{auto}=2W/(1%2BH)(1%2BI)">
+<!--   <img src="https://render.githubusercontent.com/render/math?math=f_{auto}=2W/(1%2BH)(1%2BI)">
 
-<img src="https://render.githubusercontent.com/render/math?math=L=\frac{2IW}{(1%2BI)(1%2BH)}">
+<!--  <img src="https://render.githubusercontent.com/render/math?math=L=\frac{2IW}{(1%2BI)(1%2BH)}">
 
-<img src="https://render.githubusercontent.com/render/math?math=L=2IW\div(1%2BI)(1%2BH)">
+<!--  <img src="https://render.githubusercontent.com/render/math?math=L=2IW\div(1%2BI)(1%2BH)">
 
 #### Example Usage
 
