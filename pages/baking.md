@@ -20,7 +20,7 @@ Take the following definitions as our starting point, keeping in mind that we us
 - *Inoculation* is the ratio of un-fermented flour to fermented flour in the recipe. This represents how large your yeast culture is compared to how much food you provide to the culture. This is denoted by <img src="https://render.githubusercontent.com/render/math?math=I">.
  - *Weight* is the final weight of your raw doughball. This is denoted <img src="https://render.githubusercontent.com/render/math?math=W">, and is the sum of the core ingredients <img src="https://render.githubusercontent.com/render/math?math=W=f_{auto}%2Bh_{auto}%2BL">. Salt weight is comparatively tiny, and is thus neglected throughout.
 
-### Algorithm
+#### Algorithm
 
 <img src="https://render.githubusercontent.com/render/math?math=f_{auto}=2W/(1%2BH)(1%2BI)">
 
@@ -28,12 +28,12 @@ Take the following definitions as our starting point, keeping in mind that we us
 
 <img src="https://render.githubusercontent.com/render/math?math=L=2IW\div(1%2BI)(1%2BH)">
 
-...
+#### Example Usage
+
+#### Caveats and Clarifications
+
+- As a side note, I like to distinguish between *starter* and *levain*. My starter is my base sourdough culture, which I branch off when needed. This lives in my refrigerator, and is regularly removed for feeding. The levain is the yeast culture that is prepared for a specific bake, which begins from my starter, and is then fed on a regiment for a few days leading up to bake day. 
 
 
 
-<!--# Caveats
-
-<!--As a side note, I like to distinguish between *starter* and *levain*. My starter is my base sourdough culture, which I branch off when needed. This lives in my refrigerator, and is regularly removed for feeding. The levain is the yeast culture that is prepared for a specific bake, which begins from my starter, and is then fed on a regiment for a few days leading up to bake day. -->
-
-jge 18 June 2021.
+jge 20 June 2021.
