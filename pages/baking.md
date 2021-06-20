@@ -28,12 +28,19 @@ Take the following definitions as our starting point, keeping in mind that we us
 
 <!--  <img src="https://render.githubusercontent.com/render/math?math=L=2IW\div(1%2BI)(1%2BH)">
 
+-->
+
 #### Example Usage
 
-#### Caveats and Clarifications
+Under construction. 
+
+#### Caveats, Clarifications, Good Practices
 
 - As a side note, I like to distinguish between *starter* and *levain*. My starter is my base sourdough culture, which I branch off when needed. This lives in my refrigerator, and is regularly removed for feeding. The levain is the yeast culture that is prepared for a specific bake, which begins from my starter, and is then fed on a regiment for a few days leading up to bake day. 
 
+- Best practice is to define your salt weight as a percentage of un-fermented flour weight. Most sourdough bakers fall in the range 2.0% - 2.8%. For typical recipes, a half-kilo loaf will call for 6g salt.
+
+- Vaporization will obviously occur during the baking process, resulting in a significant weight reduction for your sourdough. If you are targeting a specific final weight, expect a 20% weight loss. The process is influenced by your baking vessel, your baking oven, the loaf geometry, the local temperature and humidity (environmental vapor pressure), etc.
 
 
 jge 20 June 2021.
