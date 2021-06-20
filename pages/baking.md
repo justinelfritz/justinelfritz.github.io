@@ -4,7 +4,16 @@ title: baking
 description: explanation of baking conventions and personal sourdough recipes
 ---
 
-There is a foundational legacy problem within the sourdough baking literature, which I address here and propose an effective solution to.
+There is a foundational problem within the sourdough baking community.  Bakers conventionally design and publish static, unscalable recipes without discussing how we can generate successful new recipes that meet our exact preferences. New bakers (and veteran ones) should embrace curiosity and experimentation with new sourdough ideas, and we can enable this by writing down a self-consistent formulation that makes recipe creation as simple and reproducible as possible.
+
+This formulation allows bakers to encode environmental factors and taste preferences into their recipes from the beginning, eliminating the need for costly and disappointing experiments. This formulation also allows bakers to take a baseline recipe and make independent adjustments consistent with particular environmental conditions (high humidity, or clammy weather, ...) or simply adjustments to account for your personal crumb preference, or an addition of milk, butter, honey, etc. 
+
+Take the following definitions as our starting point, keeping in mind that we use grams as our singular measurement unit: 
+
+- *Hydration* is the ratio of liquids to non-liquids (*e.g.* flour) in our doughball. This is denoted by <img src="https://render.githubusercontent.com/render/math?math=H">
+- *Un-fermented flour* is the amount of flour we mix directly into the dough, which is not part of the Levain (starter, yeast culture). This is denoted by <img src="https://render.githubusercontent.com/render/math?math=f_{auto}">
+- *Fermented flour* is the amount of flour included in the Levain. Typically this is 50% of the Levain weight, but depends on your feeding scheme.
+- *Inoculation* is the ratio of un-fermented flour to fermented flour in the recipe. This represents how large your yeast culture is, compared to how much food you provide to the culture. This is denoted by <img src="https://render.githubusercontent.com/render/math?math=I">
 
 <img src="https://render.githubusercontent.com/render/math?math=f_{auto}=2W/(1%2BH)(1%2BI)">
 
