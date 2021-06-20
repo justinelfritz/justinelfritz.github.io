@@ -27,11 +27,13 @@ First choose your desired weight <img src="https://render.githubusercontent.com/
 
 <img src="https://render.githubusercontent.com/render/math?math=f_{auto}=2W/(1%2BH)(1%2BI)">
 
-<img src="https://render.githubusercontent.com/render/math?math=h_{auto}=f_{auto}(H(1+I)-I)">
+<img src="https://render.githubusercontent.com/render/math?math=h_{auto}=f_{auto}(H(1%2BI)-I)">
 
 The amount of levain needed is then
 
 <img src="https://render.githubusercontent.com/render/math?math=L=2I f_{auto}">.
+
+
 
 #### Example Usage
 
