@@ -8,7 +8,7 @@ There is a foundational problem within the sourdough baking community.  Bakers c
 
 This formulation allows bakers to encode environmental factors and taste preferences into their recipes from the beginning, eliminating the need for costly and disappointing experiments. This formulation also allows bakers to take a baseline recipe and make independent adjustments consistent with particular environmental conditions (high humidity, or clammy weather, ...) or simply adjustments to account for your personal crumb preference, or an addition of milk, butter, honey, etc. 
 
-# Definitions
+#### Definitions
 
 Take the following definitions as our starting point, keeping in mind that we use grams as our singular measurement unit: 
 
@@ -20,11 +20,11 @@ Take the following definitions as our starting point, keeping in mind that we us
 - *Inoculation* is the ratio of un-fermented flour to fermented flour in the recipe. This represents how large your yeast culture is compared to how much food you provide to the culture. This is denoted by <img src="https://render.githubusercontent.com/render/math?math=I">.
  - *Weight* is the final weight of your raw doughball. This is denoted <img src="https://render.githubusercontent.com/render/math?math=W">, and is the sum of the core ingredients <img src="https://render.githubusercontent.com/render/math?math=W=f_{auto}%2Bh_{auto}%2BL">. Salt weight is comparatively tiny, and is thus neglected throughout.
 
-## Algorithm
+### Algorithm
 
 <img src="https://render.githubusercontent.com/render/math?math=f_{auto}=2W/(1%2BH)(1%2BI)">
 
-<img src="https://render.githubusercontent.com/render/math?math=L=\frac{2IW}{(1%2BI)(1%2BH)">
+<img src="https://render.githubusercontent.com/render/math?math=L=\frac{2IW}{(1%2BI)(1%2BH)}">
 
 <img src="https://render.githubusercontent.com/render/math?math=L=2IW\div(1%2BI)(1%2BH)">
 
