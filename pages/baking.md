@@ -10,10 +10,12 @@ This formulation allows bakers to encode environmental factors and taste prefere
 
 Take the following definitions as our starting point, keeping in mind that we use grams as our singular measurement unit: 
 
-- *Hydration* is the ratio of liquids to non-liquids (*e.g.* flour) in our doughball. This is denoted by <img src="https://render.githubusercontent.com/render/math?math=H">
-- *Un-fermented flour* is the amount of flour we mix directly into the dough, which is not part of the Levain (starter, yeast culture). This is denoted by <img src="https://render.githubusercontent.com/render/math?math=f_{auto}">
+- *Hydration* is the ratio of liquids to non-liquids (*e.g.* flour) in our doughball. This is denoted by <img src="https://render.githubusercontent.com/render/math?math=H">.
+- *Levain* is the yeast culture used in sourdough baking. This is typically a 50%/50% mix of flours and water, fed a strict diet at specified intervals. The levain weight is denoted by <img src="https://render.githubusercontent.com/render/math?math=L">.
+- *Un-fermented flour* is the amount of flour we mix directly into the dough, which is not part of the levain. This is denoted by <img src="https://render.githubusercontent.com/render/math?math=f_{auto}">.
 - *Fermented flour* is the amount of flour included in the Levain. Typically this is 50% of the Levain weight, but depends on your feeding scheme.
-- *Inoculation* is the ratio of un-fermented flour to fermented flour in the recipe. This represents how large your yeast culture is, compared to how much food you provide to the culture. This is denoted by <img src="https://render.githubusercontent.com/render/math?math=I">
+- *Inoculation* is the ratio of un-fermented flour to fermented flour in the recipe. This represents how large your yeast culture is compared to how much food you provide to the culture. This is denoted by <img src="https://render.githubusercontent.com/render/math?math=I">.
+ - 
 
 <img src="https://render.githubusercontent.com/render/math?math=f_{auto}=2W/(1%2BH)(1%2BI)">
 
@@ -23,5 +25,7 @@ Take the following definitions as our starting point, keeping in mind that we us
 
 ...
 
+
+As a side note, I like to distinguish between *starter* and *levain*. My starter is my base sourdough culture, which I branch off when needed. This lives in my refrigerator, and is regularly removed for feeding. The levain is the yeast culture that is prepared for a specific bake, which begins from my starter, and is then fed on a regiment for a few days leading up to bake day.
 
 jge 18 June 2021.
