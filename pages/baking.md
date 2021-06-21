@@ -4,12 +4,14 @@ title: baking
 description: explanation of baking conventions and personal sourdough recipes
 ---
 
-#### Basis
-There is a foundational problem within the sourdough baking community.  Bakers conventionally design and publish static, unscalable recipes without discussing how we can generate successful new recipes that meet our exact preferences. New bakers (and veteran ones) should embrace curiosity and experimentation with new sourdough ideas, and we can enable this by writing down a self-consistent formulation that makes recipe creation as simple and reproducible as possible.
+#### Motivation
+There is a foundational problem within the sourdough baking literature.  Bakers conventionally design and publish static, unscalable recipes without discussing how we can generate successful new recipes that meet our exact preferences. New bakers (and veteran ones) should embrace curiosity and experimentation with new sourdough ideas, and we can enable this by writing down a self-consistent formulation that makes recipe creation as simple and reproducible as possible.
 
-This formulation allows bakers to encode environmental factors and taste preferences into their recipes from the beginning, eliminating the need for costly and disappointing experiments. This formulation also allows bakers to take a baseline recipe and make independent adjustments consistent with particular environmental conditions (high humidity, or clammy weather, ...) or simply adjustments to account for your personal crumb preference, or an addition of milk, butter, honey, etc. 
+The sourdough process is more complicated than typical yeast-bread baking. In both situations, the key independent variables are *hydration*--which controls the ratio of water to flour, and *inoculation*--which controls how much active yeast is present in the dough, and *total weight*. In typical yeast-breads, these three quantities are determined independently by the amounts of water, flour, and yeast in the dough. In sourdough however, the relationships are linear combinations, not simple scale factors. 
 
-The sourdough process is more complicated than typical yeast-bread baking, because in the latter we have a clear separation of flour and water and yeast. If we wish to increase hydration (as an example), we can increase the amount of water and decrease the amount of flour by the same amount. No matter what, we can achieve any imaginable bread by simply scaling the flour, water, and yeast because their quantity is always in direct proportion. This is not the case for sourdough baking. If we attempt to increase the hydration by simply adding more water ...
+The formulation provided here allows bakers to take a baseline recipe and make independent adjustments consistent with particular environmental conditions (high humidity, or clammy weather, ...) or to simply make adjustments to account for your personal crumb preference, or an addition of milk, butter, honey, etc. This method also allows bakers to encode environmental factors and taste preferences into their recipes from the beginning, creating a mathematically exact recipe from scratch, eliminating the need for costly and disappointing experiments, not to mention annoying iterative calculations. 
+
+
 
 #### Definitions
 
@@ -20,7 +22,7 @@ Take the following definitions as our starting point, keeping in mind that we us
 - *Un-fermented flour* is the amount of flour we mix directly into the dough, which is not part of the levain. This is denoted by <img src="https://render.githubusercontent.com/render/math?math=f_{auto}">. 
 - The qualifier "auto" above refers to the *autolyse* step. The water added at this step is denoted respectively by <img src="https://render.githubusercontent.com/render/math?math=h_{auto}">.
 - *Fermented flour* is the amount of flour included in the levain. Typically this is 50% of the levain weight, but depends on your feeding scheme.
-- *Inoculation* is the ratio of un-fermented flour to fermented flour in the recipe, usually written as a percentage. This represents how large your yeast culture is compared to how much food you provide it. This is denoted by <img src="https://render.githubusercontent.com/render/math?math=C">.
+- *Inoculation* is the ratio of un-fermented flour to fermented flour in the recipe, usually written as a percentage. This represents how large your yeast culture is compared to how much food you provide it, effectively a concentration. Inoculation is thus denoted by <img src="https://render.githubusercontent.com/render/math?math=C">.
  - *Weight* is the final weight of your raw doughball. This is denoted <img src="https://render.githubusercontent.com/render/math?math=W">, and is the sum of the core ingredients <img src="https://render.githubusercontent.com/render/math?math=W=f_{auto}%2Bh_{auto}%2BL">. Salt weight is comparatively tiny, and is thus neglected throughout.
 
 #### Algorithm
