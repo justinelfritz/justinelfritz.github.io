@@ -39,9 +39,11 @@ The amount of levain needed is then
 
 
 
-#### Example Usage
+#### Typical Workflow
 
-Under construction. 
+5 days before my chosen bake day, I pull my starter from the refrigerator and allow an hour to reach room temperature. The objective is to gradually feed the starter more food per feeding, to eventually make the culture vigorous enough to sufficiently inoculate our batch of bread. I always feed my starter the exact same meal of feeding flour, which is a specific mixture of individual flours. In my case, that is mostly high-quality bread flour, with a small percentage of dark rye flour, and a very small percentage of whole wheat flour. I also use tap water, despite the fact that your sourdough successes will suffer in the presence of high amounts of chloride, flouride, iodide. 
+
+In the first feeding I combine 2 parts starter, 1 part feeding flour, 1 part water. I note the time required for this starter to reach peak volume (10-24 hrs). After it has peaked, I feed again but in a 1:1:1 ratio. Again when the mixture peaks, I take a small sample and re-feed that again. If the starter seems to grow somewhat slowly, I will feed 1:1:1 again, otherwise if it appears normal and strong I will increase the feeding ratio to 1:2:2. I typically repeat the 1:2:2 step, move to 1:3:3, and finally to 1:4:4, and then begin the levain after the starter responds well to that feeding ratio. 
 
 #### Caveats, Clarifications, Good Practices
 
