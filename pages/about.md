@@ -55,7 +55,7 @@ description: general synopsis and motivation
 ---
 
 ### Awards and Development
-
+(**2021**) **Alumnus attendee:** *70<sup>th</sup> Meeting of Nobel Laureates and Young Researchers*; Lindau, Germany.
 
 (**2017**) **Observation proposal:** *XMM-Newton* 159ks exposure time, *Probing magnetic field re-emergence through X-ray observations of radio pulsars*, (secondary proposer).   
 
