@@ -49,12 +49,12 @@ In the first feeding I combine 2 parts starter, 1 part feeding flour, 1 part wat
 
 The next morning, I mix the <img src="https://render.githubusercontent.com/render/math?math=f_{auto}"> and <img src="https://render.githubusercontent.com/render/math?math=h_{auto}"> to autolyse for at least 1 hour, at most 2 hours. I then add the mature levain and mix by hand, folding and massaging everything together but not destroying the gluten network. Rest the dough for 30-40 minutes, and then add the salt (approximately 6g per 600g raw dough, see 'Good Practices' below). Again rest for 30 minutes following this. The next few hours consist of a series of (a) simple linear stretches, and/or (b) envelope folds, and/or (c) coil folds, and/or (d) other techniques which strengthen the gluten network and re-distribute heat. I typically do between 1 and 4 stretch & folds during this period. I then let the dough rest and bulk up (rise) for roughly 1-2 hours. Once the dough has bulked up by 30% of its volume, I weigh & cut the dough into the correct number of loaves, give each a pre-shape fold, and rest for 5-10 minutes. I then do a final shaping, transfer the doughs into metal mixing bowls, cover with plastic wrap, and rest for 10-14 hours in the refrigerator.
 
-On bake day, I pre-heat dutch ovens to 500F for 1 hour. I transfer cold loaves onto parchment paper, do a simple scoring with a sharp knife or 2-sided razor, and immediately transfer into the pre-heated Dutch oven. For my typical 600g loaves, the baking is done in 3 stages:
- - Stage 1: immediately turn heat to 450F. Bake with lid on, for 20 minutes.
+On bake day, I pre-heat dutch ovens to 500F for 1 hour. I transfer cold loaves onto parchment paper, do a simple scoring with a sharp knife or 2-sided razor, and immediately transfer into the pre-heated Dutch oven. For my typical 600g loaves, there are 3 baking stages:
+ - Stage 1: immediately reduce oven temperature to 450F. Bake with lid on, for 20 minutes.
  - Stage 2: Remove lid, bake for another 20 minutes.
  - Stage 3: Reduce heat to 425F, bake for 10 minutes.
 
- Let loaf cool. Eat loaf. Rejoice.
+Remove bread from the dutch oven, and let cool minimum 1 hour before cutting. Patience pays off handsomely here.
 
 #### Caveats, Clarifications, Good Practices
 
