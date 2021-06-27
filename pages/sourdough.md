@@ -25,7 +25,7 @@ Take the following definitions as our starting point, keeping in mind that we us
 - *Inoculation* is the ratio of un-fermented flour to fermented flour in the recipe. This represents how large your yeast culture is compared to how much food you provide it, effectively a concentration. Inoculation is thus denoted by <img src="https://render.githubusercontent.com/render/math?math=C">.
  - *Weight* is the final weight of your raw doughball. This is denoted <img src="https://render.githubusercontent.com/render/math?math=W">, and is the sum of the core ingredients <img src="https://render.githubusercontent.com/render/math?math=W=f_{auto}%2Bh_{auto}%2BL">. Salt weight is comparatively tiny, and is thus neglected throughout.
 
-#### Algorithm
+#### Key equations
 
 First choose your desired weight <img src="https://render.githubusercontent.com/render/math?math=W">. Now choose your hydration <img src="https://render.githubusercontent.com/render/math?math=H"> and inoculation <img src="https://render.githubusercontent.com/render/math?math=C"> based on your environment and preferences. The first step is to compute <img src="https://render.githubusercontent.com/render/math?math=f_{auto}"> and <img src="https://render.githubusercontent.com/render/math?math=h_{auto}"> for your autolyse:
 
@@ -65,5 +65,7 @@ Remove bread from the dutch oven, and let cool minimum 1 hour before cutting. Pa
 - Vaporization will obviously occur during the baking process, resulting in a significant weight reduction for your sourdough. If you are targeting a specific final weight, expect 20% weight loss. The vaporization process is influenced by your baking vessel, your baking oven, the loaf geometry, the local temperature and humidity, etc. You will find higher vapor loss for loaves with larger ratios of surface area to volume, such as baguettes. 
 
 - One tricky aspect of sourdough baking is determining baking times for loaves of a given weight. There is a simple scaling for this, where I use as a baseline the 3-stage, 50-minute bake time that's perfect for 600g loaves. Assuming linear thermal diffusion and roughly spherical loaf shapes, it's trivial to show that the correct baking time for a loaf of weight <img src="https://render.githubusercontent.com/render/math?math=W_*"> can be estimated by <img src="https://render.githubusercontent.com/render/math?math=t_*=t_{normal}(W_*/W)^{0.33}">, where <img src="https://render.githubusercontent.com/render/math?math=t_{normal}"> is the normal amount of time you bake your normal bread of weight <img src="https://render.githubusercontent.com/render/math?math=W">. In the discussions above, I have repeatedly used <img src="https://render.githubusercontent.com/render/math?math=W=600g"> and provided different values of <img src="https://render.githubusercontent.com/render/math?math=t_{normal}"> in the 3 baking stages (20 minutes, 20 minutes, 10 minutes). 
+
+- In hot & humid summer weather, where my kitchen may be 82F with 80% humidity (mid-Atlantic), I often bake with <img src="https://render.githubusercontent.com/render/math?math=H=0.76"> and <img src="https://render.githubusercontent.com/render/math?math=C=0.10">. In the winter when the indoors temperature is 62F, I typically utilize values <img src="https://render.githubusercontent.com/render/math?math=H=0.80, C=0.13">.  
 
 jge 26 June 2021.
