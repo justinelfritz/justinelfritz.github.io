@@ -1,6 +1,6 @@
 ---
 layout: page
-title: about
+title: cv
 description: general synopsis and motivation
 ---
 
