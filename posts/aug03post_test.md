@@ -1,8 +1,6 @@
-
-
 ---
 layout: post
-title: test title
+title: sample post
 ---
 {{ page.title }}
 ==============
