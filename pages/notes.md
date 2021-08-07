@@ -1,6 +1,6 @@
 ---
 layout: page
-title: notes 
+title: entries 
 description: miscellaneous notes files
 ---
 
