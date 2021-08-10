@@ -9,13 +9,6 @@ description: collection point for overviews of individual projects
     <li><span>Mathematically correct method for sourdough recipe design</span> &raquo; <a href="https://mag06.github.io/pages/sourdough.html">Re-thinking your sourdough recipe</a></li>
 </ul>-->
 
-<!--[Re-thinking sourdough recipes.]
 
-<!---
-Currently in preparation are writeups on ongoing theoretical and computational projects related to the internal composition of neutron stars, magnetic field generation and time-variability in plasmas, and analyses and interpretation of uniquely American socio-economic questions.
--->
+<!---Currently in preparation are writeups on ongoing theoretical and computational projects related to the internal composition of neutron stars, magnetic field generation and time-variability in plasmas, and analyses and interpretation of uniquely American socio-economic questions.-->
 
-
-
-
-jge 31 May 2021.
