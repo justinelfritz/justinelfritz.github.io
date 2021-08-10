@@ -4,6 +4,8 @@ title: notes
 description: miscellaneous notes files
 ---
 
+Under construction pending some formatting updates. 
+
 <!--<h1>Highlighted Media</h1>
   <ul class="posts">
     <li><span>02 Sep 2013</span> &raquo; <a href="https://www.wired.com/2013/09/github-for-anything/">Article: WIRED - GitHub Is Going Mainstream</a></li>
