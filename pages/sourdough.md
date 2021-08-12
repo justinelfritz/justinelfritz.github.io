@@ -68,4 +68,37 @@ Remove bread from the dutch oven, and let cool minimum 1 hour before cutting. Pa
 
 - In hot & humid summer weather, where my kitchen may be 82F with 80% humidity (mid-Atlantic), I often bake with <img src="https://render.githubusercontent.com/render/math?math=H=0.76"> and <img src="https://render.githubusercontent.com/render/math?math=C=0.10"> to avoid impossibly sticky dough (when <img src="https://render.githubusercontent.com/render/math?math=H"> is too high) and to guarantee a sensible rise time (yeast growth rates have strong, power-law dependence in the 78F-95F range, so I keep <img src="https://render.githubusercontent.com/render/math?math=C"> low). In the winter when the indoors temperature is ~62F, I typically utilize values <img src="https://render.githubusercontent.com/render/math?math=H=0.80, C=0.13"> to achieve the same results with a comparable rise time of 6-7hrs.
 
+#### Personal recipes
+
+My starter through 2018-2021 was always fed with 50\% H2O + 50\% flour mix. The flour mix was 90\% bread flour (King Arthur Sir Galahad Artisan bread flour, to be specific) and 10\% finely milled dark rye flour from my local Amish shop. This made for a robust and flexible base for whatever specific levain I chose to create for a specific bread batch. Recipes below were designed through many cycles of delicious iteration. 
+
+I prefer to avoid listing separate "deep summer" and "deep winter" recipes for each style here. Refer to the comments above for some rough guidance.
+
+**`New West'** 
+This was my standard sourdough through 2020-2021. The levain flour percentages are:
+
+* 50\% bread flour
+* 40\% whole wheat flour (coarse)
+* 5\% organic spelt flour (coarse)
+* 5\% dark rye flour (fine)
+
+For a 600g doughball (est. 500g baked) at <img src="https://render.githubusercontent.com/render/math?math=H=0.80"> and <img src="https://render.githubusercontent.com/render/math?math=C=0.11">, we have 
+
+<img src="https://render.githubusercontent.com/render/math?math=f_{auto}=300g">
+
+<img src="https://render.githubusercontent.com/render/math?math=h_{auto}=234g">
+
+<img src="https://render.githubusercontent.com/render/math?math=L=66g">
+
+The autolyse components uses a flour mix with the following percentages: 
+
+* 80\% bread flour
+* 12\% whole wheat flour (coarse)
+* 8\% organic spelt flour (coarse)
+
+
+
+<!--**Whole wheat \& banku**-->
+
+
 jge 26 June 2021.
