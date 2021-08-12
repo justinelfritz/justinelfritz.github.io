@@ -70,17 +70,18 @@ Remove bread from the dutch oven, and let cool minimum 1 hour before cutting. Pa
 
 #### Personal recipes
 
-My starter through 2018-2021 was always fed with 50\% H2O + 50\% flour mix. The flour mix was 90\% bread flour (King Arthur Sir Galahad Artisan bread flour, to be specific) and 10\% finely milled dark rye flour from my local Amish shop. This made for a robust and flexible base for whatever specific levain I chose to create for a specific bread batch. Recipes below were designed through many cycles of delicious iteration. 
+My starter through 2018-2021 was always fed with 50% H2O + 50% flour mix. The flour mix was 90% bread flour (King Arthur Sir Galahad Artisan bread flour, to be specific) and 10% finely milled dark rye flour from my local Amish shop. This made for a robust and flexible base for whatever specific levain I chose to create for a specific bread batch. Recipes below were designed through many cycles of delicious iteration. 
 
 I prefer to avoid listing separate "deep summer" and "deep winter" recipes for each style here. Refer to the comments above for some rough guidance.
 
 **`New West'** 
+
 This was my standard sourdough through 2020-2021. The levain flour percentages are:
 
-* 50\% bread flour
-* 40\% whole wheat flour (coarse)
-* 5\% organic spelt flour (coarse)
-* 5\% dark rye flour (fine)
+* 50% bread flour
+* 40% whole wheat flour (coarse)
+* 5% organic spelt flour (coarse)
+* 5% dark rye flour (fine)
 
 For a 600g doughball (est. 500g baked) at <img src="https://render.githubusercontent.com/render/math?math=H=0.80"> and <img src="https://render.githubusercontent.com/render/math?math=C=0.11">, we have 
 
@@ -92,9 +93,9 @@ For a 600g doughball (est. 500g baked) at <img src="https://render.githubusercon
 
 The autolyse components uses a flour mix with the following percentages: 
 
-* 80\% bread flour
-* 12\% whole wheat flour (coarse)
-* 8\% organic spelt flour (coarse)
+* 80% bread flour
+* 12% whole wheat flour (coarse)
+* 8% organic spelt flour (coarse)
 
 
 
