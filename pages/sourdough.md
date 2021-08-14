@@ -39,7 +39,17 @@ The amount of levain needed is then
 
 #### Key equations: additional ingredients
 
-The addition of non-standard ingredients modifies the standard equations in an intuitive way. To include non-fermenting solid ingredients such as seeds, spices, sugar, or salt, we can simply reduce the fermenting doughball weight <img src="https://render.githubusercontent.com/render/math?math=W"> such that the total weight of the doughball and the added ingredients sums up to the total desired weight. For example, to obtain a 1000g (raw) bread dough with a 60g mixture of sugar and salt, use the 'standard case' equations for your 940g dough, and add your sugar and salt when needed. This is mathematically permissible when the weight of the added ingredients is small compared to the dough weight.
+The addition of non-standard ingredients modifies the standard equations in an intuitive way. The two use cases are for added solids and added liquids. For future reference, butter and honey belong to the latter group. 
+
+To include non-fermenting solid ingredients such as seeds, spices, sugar, or salt, we can simply reduce the fermenting doughball weight <img src="https://render.githubusercontent.com/render/math?math=W"> such that the total weight of the doughball and the added ingredients sums up to the total desired weight. For example, to obtain a 1000g (raw) bread dough with a 60g mixture of sugar and salt, use the 'standard case' equations for your 940g dough, and add your sugar and salt when needed. This is mathematically permissible because the weight of the added ingredients is small compared to the dough weight, and because the (solid) ingredients have no non-negligible effect on the fermentation. 
+
+Including non-standard liquids like honey, milk, or butter requires a re-consideration of the 'standard case' equations. Here's how I estimate the solid/liquid breadown of each:
+
+* Honey: 85% solids + 15% liquid
+* Milk: 12% solids + 88% liquid  
+* Butter: 85% solids + 15% liquid 
+
+When incorporating these ingredients into a sourdough, it can be important to account for their liquid fraction so that your final dough isn't a soupy mess. Account for these contributions to the overall hydration by including the respective weights in <img src="https://render.githubusercontent.com/render/math?math=h_{auto}">. For example, define your dough parameters as in the 'standard case', and once those calculations are complete ensure that (for example) the water plus milk plus honey components add up to <img src="https://render.githubusercontent.com/render/math?math=h_{auto}">. See the Wheaty Banku recipe below for a concete numerical example.
 
 #### Typical workflow
 
@@ -99,17 +109,31 @@ The autolyse component uses a flour mix with the following percentages:
 * 12% whole wheat flour (coarse)
 * 8% organic spelt flour (coarse)
 
+As usual, I use about 6g non-iodized salt for a typical 600g dough. I give these their signature crust of golden flax seeds before the cold ferment stage.
+
 **`Winter Rye'**
 
-A wonderfully rich, savoury, and deeply dark sourdough that I often make during the holidays. I start with a simple levain: 
+A wonderfully rich, savoury, and deeply dark sourdough that I often make during the holidays. I start with a simple and sweet levain: 
 
 * 80% bread flour
 * 15% whole wheat flour (coarse)
 * 5% dark rye flour (fine)
 
+The goal is a loaf with elevated bitterness that balances with a spectrum of sweet. I like the earthyness of spelt for this, in addition to the normal dark rye. For the autolyse I use: 
 
+* 80% bread flour
+* 12% whole wheat flour (coarse)
+* 4% organic spelt flour (coarse)
+* 4% dark rye flour (fine)
 
+As with most of my loaves, I use about 6g of non-iodized salt for a 600g dough weight. The magic of this loaf is the viscous, chocolately mixture I marble into the dough at the lamination stage. The mixture is:
 
+* 35% dark brown sugar
+* 24% dutch cocoa powder
+* 29% blackstrap molasses
+* 12% caraway seeds
+
+The total weight I layer in the dough is about 5.7% of the total dough weight. For a 600g loaf, this comes out to a 34g batch of the above ingredient mix. Be systematic and gentle with the stretching & folding, and you'll be rewarded with a gorgeous marbling. 
 
 <!--**Whole wheat \& banku**-->
 
