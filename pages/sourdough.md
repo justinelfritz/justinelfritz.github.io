@@ -22,10 +22,10 @@ Take the following definitions as our starting point, keeping in mind that we us
 - *Un-fermented flour* is the amount of flour we mix directly into the dough, which is not part of the levain. This is denoted by <img src="https://render.githubusercontent.com/render/math?math=f_{auto}">. 
 - The qualifier "auto" above refers to the *autolyse* step. The water added at this step is denoted respectively by <img src="https://render.githubusercontent.com/render/math?math=h_{auto}">.
 - *Fermented flour* is the amount of flour included in the levain. Typically this is 50% of the levain weight, but depends on your feeding scheme.
-- *Inoculation* is the ratio of un-fermented flour to fermented flour in the recipe. This represents how large your yeast culture is compared to how much food you provide it, effectively a concentration. Inoculation is thus denoted by <img src="https://render.githubusercontent.com/render/math?math=C">.
+- *Inoculation* is the ratio of fermented flour to un-fermented flour in the recipe. This represents how large your yeast culture is compared to how much food you provide it, effectively a concentration. Inoculation is denoted by <img src="https://render.githubusercontent.com/render/math?math=C">.
  - *Weight* is the final weight of your raw doughball. This is denoted <img src="https://render.githubusercontent.com/render/math?math=W">, and is the sum of the core ingredients <img src="https://render.githubusercontent.com/render/math?math=W=f_{auto}%2Bh_{auto}%2BL">. Salt weight is comparatively tiny, and is thus neglected throughout.
 
-#### Key equations
+#### Key equations: standard case
 
 First choose your desired weight <img src="https://render.githubusercontent.com/render/math?math=W">. Now choose your hydration <img src="https://render.githubusercontent.com/render/math?math=H"> and inoculation <img src="https://render.githubusercontent.com/render/math?math=C"> based on your environment and preferences. The first step is to compute <img src="https://render.githubusercontent.com/render/math?math=f_{auto}"> and <img src="https://render.githubusercontent.com/render/math?math=h_{auto}"> for your autolyse:
 
@@ -37,9 +37,11 @@ The amount of levain needed is then
 
 <img src="https://render.githubusercontent.com/render/math?math=L=2C f_{auto}">.
 
+#### Key equations: additional ingredients
 
+The addition of non-standard ingredients modifies the standard equations in an intuitive way. To include non-fermenting solid ingredients such as seeds, spices, sugar, or salt, we can simply reduce the fermenting doughball weight <img src="https://render.githubusercontent.com/render/math?math=W"> such that the total weight of the doughball and the added ingredients sums up to the total desired weight. For example, to obtain a 1000g (raw) bread dough with a 60g mixture of sugar and salt, use the 'standard case' equations for your 940g dough, and add your sugar and salt when needed. This is mathematically permissible when the weight of the added ingredients is small compared to the dough weight.
 
-#### Typical Workflow
+#### Typical workflow
 
 Roughly 7 days before my chosen bake day, I pull my starter from the refrigerator and allow an hour to reach room temperature. The objective is to gradually feed the starter more food per feeding, to eventually make the culture vigorous enough to sufficiently inoculate our batch of bread. I always feed my starter the exact same meal of water and feeding flour, which is a specific mixture of individual flours. In my case, that is 90% high-quality bread flour, 9% dark rye flour, and 1% whole wheat flour.  
 
@@ -56,7 +58,7 @@ On bake day, I pre-heat dutch ovens to 500F for 1 hour. I transfer cold loaves o
 
 Remove bread from the dutch oven, and let cool minimum 1 hour before cutting. Patience pays off handsomely here.
 
-#### Caveats, Clarifications, Good Practices
+#### Caveats, clarifications, good practices
 
 - I like to distinguish between *starter* and *levain*. My starter is my base sourdough culture, which I branch off when needed. This lives in my refrigerator, and is regularly removed for feeding. The levain is the yeast culture that is prepared for a specific bake, which begins from my starter, and is then fed on a regiment for a few days leading up to bake day. 
 
@@ -91,11 +93,21 @@ For a 600g doughball (est. 500g baked) at <img src="https://render.githubusercon
 
 <img src="https://render.githubusercontent.com/render/math?math=L=66g">
 
-The autolyse components uses a flour mix with the following percentages: 
+The autolyse component uses a flour mix with the following percentages: 
 
 * 80% bread flour
 * 12% whole wheat flour (coarse)
 * 8% organic spelt flour (coarse)
+
+**`Winter Rye'**
+
+A wonderfully rich, savoury, and deeply dark sourdough that I often make during the holidays. I start with a simple levain: 
+
+* 80% bread flour
+* 15% whole wheat flour (coarse)
+* 5% dark rye flour (fine)
+
+
 
 
 
