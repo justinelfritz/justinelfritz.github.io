@@ -52,13 +52,13 @@ Including non-standard liquids like honey, milk, or butter requires a re-conside
 
 The key equations for arbitrary ingredients with solid and/or liquid components: 
 
-<img src="https://render.githubusercontent.com/render/math?math=f_{auto}=(W-W_{add})/(1%2BH)(1%2BC)">
+<img src="https://render.githubusercontent.com/render/math?math=f_{auto}=(W-W_{solids})/(1%2BH)(1%2BC)">
 
 <img src="https://render.githubusercontent.com/render/math?math=h_{auto}=f_{auto}[H(1%2BC)-C]-h_{add}">
 
 <img src="https://render.githubusercontent.com/render/math?math=L=2C f_{auto}">.
 
-It's worth noting that in the absence of additional solid ingredients (everything other than unfermented flour <img src="https://render.githubusercontent.com/render/math?math=f_{auto}">), the concepts of dough hydration and dough stickyness begin to diverge. This procedure introduces a degree of freedom that the baker is free to create a constraint for. My choice of constraint is to define the hydration as I have above, as the ratio of all liquid components divided by the sum of the fermented and un-fermented flours only. I exclude salt, spices, etc in the denominator because it is more mathematically natural in my opinion. 
+It's worth noting that in the absence of additional solid ingredients (everything other than un-fermented flour <img src="https://render.githubusercontent.com/render/math?math=f_{auto}">), the concepts of dough hydration and dough stickyness begin to diverge. This procedure introduces a degree of freedom that the baker is free to create a constraint for. My choice of constraint is to define the hydration as I have above, as the ratio of all liquid components divided by the sum of the fermented and un-fermented flours only. I exclude salt, spices, etc in the denominator because it is more mathematically natural in my opinion. 
 
 #### Typical workflow
 
