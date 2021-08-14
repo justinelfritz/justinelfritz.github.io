@@ -41,17 +41,14 @@ The amount of levain needed is then
 
 #### Key equations: additional ingredients
 
-The addition of non-standard ingredients modifies the standard equations in an intuitive way. The two use cases are for added solids and added liquids. 
+The addition of non-standard ingredients modifies the standard equations in an intuitive way. The two use cases are for added solids <img src="https://render.githubusercontent.com/render/math?math=W_{solids}"> and added liquids <img src="https://render.githubusercontent.com/render/math?math=h_{add}">.
 
-To include non-fermenting solid ingredients such as seeds, spices, sugar, or salt, we can simply reduce the fermenting doughball weight <img src="https://render.githubusercontent.com/render/math?math=W"> such that the total weight of the doughball and the added ingredients sums up to the total desired weight. For example, to obtain a 1000g (raw) bread dough with a 60g mixture of sugar and salt, use the 'standard case' equations for your 940g dough, and add your sugar and salt when needed. This is mathematically permissible because the weight of the added ingredients is small compared to the dough weight, and because the (solid) ingredients have no non-negligible effect on the fermentation. 
-
-Including non-standard liquids like honey, milk, or butter requires a re-consideration of the 'standard case' equations. Here's how I estimate the solid/liquid breadown of each:
+Including non-standard liquids like honey, milk, or butter requires a re-consideration of the 'standard case' equations. Here's how I estimate the solid/liquid breadown of typical added liquids:
 
 * Honey: 85% solids + 15% liquid
 * Milk: 12% solids + 88% liquid  
 * Butter: 85% solids + 15% liquid 
-
-When incorporating these ingredients into a sourdough, it can be important to account for their liquid fraction so that your final dough isn't a soupy mess. Account for these contributions to the overall hydration by including the respective weights in <img src="https://render.githubusercontent.com/render/math?math=h_{auto}">. For example, define your dough parameters as in the 'standard case', and once those calculations are complete ensure that (for example) the water plus milk plus honey components add up to <img src="https://render.githubusercontent.com/render/math?math=h_{auto}">. See the Banku sourdough recipe below for a concete numerical example.
+* Molasses: 78% solids + 22% liquid
 
 The key equations for arbitrary ingredients with solid and/or liquid components: 
 
@@ -151,5 +148,13 @@ The total weight I layer in the dough is about 5.7% of the total dough weight. F
 
 Fermented corn slurry makes a remarkable infusion to an otherwise normal sourdough. Banku refers to the traditional fermented corn dough ubiquitous throughout West Africa. My use of the term 'Banku' in a sourdough context is a complete bastardization, and this practice (to my knowledge) has neither African nor Appalachian roots.
 
-The corn ferment is usually ready after 24hrs at room temperature. To create it, mix 55% H2O and 45% yellow cornmeal, with a dash of cornstarch (0.5% by weight of total mix). 
+The corn ferment is usually ready after 24hrs at room temperature. To create it, mix 55% H2O and 45% yellow cornmeal, with a dash of cornstarch (0.5% by weight of total mix). Allow the mix to aerate. It should have a slightly sweet fermented smell when it's ready. I use a very simple white sourdough here to allow the nuanced sweet corn flavors to break through. 
+
+I prefer the dough to have 10% banku, which is added at the lamination stage. This means that for a 650g doughball, I use <img src="https://render.githubusercontent.com/render/math?math=W_{solids}=29g"> and <img src="https://render.githubusercontent.com/render/math?math=h_{add}=36g">. Assuming 80% hydration and 12% inoculation, the equations yield:
+
+<img src="https://render.githubusercontent.com/render/math?math=f_{auto}=303g">
+
+<img src="https://render.githubusercontent.com/render/math?math=h_{auto}=203g">
+
+<img src="https://render.githubusercontent.com/render/math?math=L=74g">
 
