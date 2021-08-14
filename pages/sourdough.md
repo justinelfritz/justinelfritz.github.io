@@ -58,6 +58,8 @@ The key equations for arbitrary ingredients with solid and/or liquid components:
 
 <img src="https://render.githubusercontent.com/render/math?math=L=2C f_{auto}">.
 
+It's worth noting that in the absence of additional solid ingredients (everything other than unfermented flour <img src="https://render.githubusercontent.com/render/math?math=f_{auto}">), the concepts of dough hydration and dough stickyness begin to diverge. This procedure introduces a degree of freedom that the baker is free to create a constraint for. My choice of constraint is to define the hydration as I have above, as the ratio of all liquid components divided by the sum of the fermented and un-fermented flours only. I exclude salt, spices, etc in the denominator because it is more mathematically natural in my opinion. 
+
 #### Typical workflow
 
 Roughly 7 days before my chosen bake day, I pull my starter from the refrigerator and allow an hour to reach room temperature. The objective is to gradually feed the starter more food per feeding, to eventually make the culture vigorous enough to sufficiently inoculate our batch of bread. I always feed my starter the exact same meal of water and feeding flour, which is a specific mixture of individual flours. In my case, that is 90% high-quality bread flour, 9% dark rye flour, and 1% whole wheat flour.  
