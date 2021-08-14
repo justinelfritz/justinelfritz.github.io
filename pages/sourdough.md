@@ -25,6 +25,8 @@ Take the following definitions as our starting point, keeping in mind that we us
 - *Inoculation* is the ratio of fermented flour to un-fermented flour in the recipe. This represents how large your yeast culture is compared to how much food you provide it, effectively a concentration. Inoculation is denoted by <img src="https://render.githubusercontent.com/render/math?math=C">.
  - *Weight* is the final weight of your raw doughball. This is denoted <img src="https://render.githubusercontent.com/render/math?math=W">, and is the sum of the core ingredients <img src="https://render.githubusercontent.com/render/math?math=W=f_{auto}%2Bh_{auto}%2BL">. Salt weight is comparatively tiny, and is thus neglected throughout.
 
+Typical sourdough, regardless of practitioner or region or tradition, will use hydration in the range 0.72 (very low) to 0.84 (very high), and inoculation in the range 0.10 (generally for hot & humid weather) and 0.14 (very high). Good baseline values are 0.79 and 0.11 respectively. 
+
 #### Key equations: standard case
 
 First choose your desired weight <img src="https://render.githubusercontent.com/render/math?math=W">. Now choose your hydration <img src="https://render.githubusercontent.com/render/math?math=H"> and inoculation <img src="https://render.githubusercontent.com/render/math?math=C"> based on your environment and preferences. The first step is to compute <img src="https://render.githubusercontent.com/render/math?math=f_{auto}"> and <img src="https://render.githubusercontent.com/render/math?math=h_{auto}"> for your autolyse:
@@ -39,7 +41,7 @@ The amount of levain needed is then
 
 #### Key equations: additional ingredients
 
-The addition of non-standard ingredients modifies the standard equations in an intuitive way. The two use cases are for added solids and added liquids. For future reference, butter and honey belong to the latter group. 
+The addition of non-standard ingredients modifies the standard equations in an intuitive way. The two use cases are for added solids and added liquids. 
 
 To include non-fermenting solid ingredients such as seeds, spices, sugar, or salt, we can simply reduce the fermenting doughball weight <img src="https://render.githubusercontent.com/render/math?math=W"> such that the total weight of the doughball and the added ingredients sums up to the total desired weight. For example, to obtain a 1000g (raw) bread dough with a 60g mixture of sugar and salt, use the 'standard case' equations for your 940g dough, and add your sugar and salt when needed. This is mathematically permissible because the weight of the added ingredients is small compared to the dough weight, and because the (solid) ingredients have no non-negligible effect on the fermentation. 
 
@@ -49,7 +51,15 @@ Including non-standard liquids like honey, milk, or butter requires a re-conside
 * Milk: 12% solids + 88% liquid  
 * Butter: 85% solids + 15% liquid 
 
-When incorporating these ingredients into a sourdough, it can be important to account for their liquid fraction so that your final dough isn't a soupy mess. Account for these contributions to the overall hydration by including the respective weights in <img src="https://render.githubusercontent.com/render/math?math=h_{auto}">. For example, define your dough parameters as in the 'standard case', and once those calculations are complete ensure that (for example) the water plus milk plus honey components add up to <img src="https://render.githubusercontent.com/render/math?math=h_{auto}">. See the Wheaty Banku recipe below for a concete numerical example.
+When incorporating these ingredients into a sourdough, it can be important to account for their liquid fraction so that your final dough isn't a soupy mess. Account for these contributions to the overall hydration by including the respective weights in <img src="https://render.githubusercontent.com/render/math?math=h_{auto}">. For example, define your dough parameters as in the 'standard case', and once those calculations are complete ensure that (for example) the water plus milk plus honey components add up to <img src="https://render.githubusercontent.com/render/math?math=h_{auto}">. See the Banku sourdough recipe below for a concete numerical example.
+
+The key equations for arbitrary ingredients with solid and/or liquid components: 
+
+<img src="https://render.githubusercontent.com/render/math?math=f_{auto}=(W-W_{add})/(1%2BH)(1%2BC)">
+
+<img src="https://render.githubusercontent.com/render/math?math=h_{auto}=f_{auto}[H(1%2BC)-C]-h_{add}">
+
+<img src="https://render.githubusercontent.com/render/math?math=L=2C f_{auto}">.
 
 #### Typical workflow
 
@@ -79,6 +89,8 @@ Remove bread from the dutch oven, and let cool minimum 1 hour before cutting. Pa
 - One tricky aspect of sourdough baking is determining baking times for loaves of a given weight. There is a simple scaling for this, where I use as a baseline the 3-stage, 50-minute bake time that's perfect for 600g loaves. Assuming linear thermal diffusion and roughly spherical loaf shapes, it's trivial to show that the correct baking time for a loaf of weight <img src="https://render.githubusercontent.com/render/math?math=W_*"> can be estimated by <img src="https://render.githubusercontent.com/render/math?math=t_*=t_{normal}(W_*/W)^{0.33}">, where <img src="https://render.githubusercontent.com/render/math?math=t_{normal}"> is the normal amount of time you bake your normal bread of weight <img src="https://render.githubusercontent.com/render/math?math=W">. In the discussions above, I have repeatedly used <img src="https://render.githubusercontent.com/render/math?math=W=600g"> and provided different values of <img src="https://render.githubusercontent.com/render/math?math=t_{normal}"> in the 3 baking stages (20 minutes, 20 minutes, 10 minutes). 
 
 - In hot & humid summer weather, where my kitchen may be 82F with 80% humidity (mid-Atlantic), I often bake with <img src="https://render.githubusercontent.com/render/math?math=H=0.76"> and <img src="https://render.githubusercontent.com/render/math?math=C=0.10"> to avoid impossibly sticky dough (when <img src="https://render.githubusercontent.com/render/math?math=H"> is too high) and to guarantee a sensible rise time (yeast growth rates have strong, power-law dependence in the 78F-95F range, so I keep <img src="https://render.githubusercontent.com/render/math?math=C"> low). In the winter when the indoors temperature is ~62F, I typically utilize values <img src="https://render.githubusercontent.com/render/math?math=H=0.80, C=0.13"> to achieve the same results with a comparable rise time of 6-7hrs.
+
+---
 
 #### Personal recipes
 
@@ -135,7 +147,9 @@ As with most of my loaves, I use about 6g of non-iodized salt for a 600g dough w
 
 The total weight I layer in the dough is about 5.7% of the total dough weight. For a 600g loaf, this comes out to a 34g batch of the above ingredient mix. Be systematic and gentle with the stretching & folding, and you'll be rewarded with a gorgeous marbling. 
 
-<!--**Whole wheat \& banku**-->
+**Banku sourdough**
 
+Fermented corn slurry makes a remarkable infusion to an otherwise normal sourdough. Banku refers to the traditional fermented corn dough ubiquitous throughout West Africa. My use of the term 'Banku' in a sourdough context is a complete bastardization, and this practice (to my knowledge) has neither African nor Appalachian roots.
 
-jge 26 June 2021.
+The corn ferment is usually ready after 24hrs at room temperature. To create it, mix 55% H2O and 45% yellow cornmeal, with a dash of cornstarch (0.5% by weight of total mix). 
+
