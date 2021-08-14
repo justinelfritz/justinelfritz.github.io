@@ -146,7 +146,7 @@ As with most of my loaves, I use about 6g of non-iodized salt for a 600g dough w
 
 The total weight I layer in the dough is about 5.7% of the total dough weight. For a 600g loaf, this comes out to a 34g batch of the above ingredient mix. Be systematic and gentle with the stretching & folding, and you'll be rewarded with a gorgeous marbling. 
 
-**Banku sourdough**
+**`Banku sourdough'**
 
 Fermented corn slurry makes a remarkable infusion to an otherwise normal sourdough. Banku refers to the traditional fermented corn dough ubiquitous throughout West Africa. My use of the term 'Banku' in a sourdough context is a complete bastardization, and this practice (to my knowledge) has neither African nor Appalachian roots.
 
