@@ -4,7 +4,7 @@ title: cv
 description: general synopsis and motivation
 ---
 
-<a href="https://www.linkedin.com/in/justinelfritz/"><img src="https://mag06.github.io/linkedin_circ.svg" width="50" height="50"></a> <a href="https://www.researchgate.net/profile/Justin_Elfritz"><img src="https://mag06.github.io/ResearchGate2.png" width="50" height="50"></a> <a href="https://scholar.google.com/citations?user=TikZtJcAAAAJ&hl=en"><img src="https://mag06.github.io/google_cite1.png" width="50" height="50"></a> 
+<a href="https://www.linkedin.com/in/justinelfritz/"><img src="https://justinelfritz.github.io/linkedin_circ.svg" width="50" height="50"></a> <a href="https://www.researchgate.net/profile/Justin_Elfritz"><img src="https://justinelfritz.github.io/ResearchGate2.png" width="50" height="50"></a> <a href="https://scholar.google.com/citations?user=TikZtJcAAAAJ&hl=en"><img src="https://justinelfritz.github.io/google_cite1.png" width="50" height="50"></a> 
 
 ### Professional Experience
 

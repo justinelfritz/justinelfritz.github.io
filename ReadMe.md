@@ -1,4 +1,4 @@
-## mag06.github.io
+## justinelfritz.github.io
 
 A [Github Pages](https://pages.github.com) repo for some pet projects and general sandboxing. 
 
