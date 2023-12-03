@@ -20,7 +20,7 @@ and the payoff time <img src="https://render.githubusercontent.com/render/math?m
 
 Alternatively we may specify the desired payoff time ... 
 
-Is there native support now for inline equations like $\sigma = \sqrt{1-x^2}$ or a standalone equation such as: 
+Is there native support now for inline equations like $`\sigma = \sqrt{1-x^2}`$ or a standalone equation such as: 
 
 $$\left(l^2-m^2 + \frac{\mathrm{d}\theta}{\mathrm{sin}\theta}\right) = y^2$$
 
