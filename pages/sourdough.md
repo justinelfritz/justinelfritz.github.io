@@ -11,7 +11,7 @@ The process of developing a sourdough bread recipe is more complicated than typi
 
 The formulation provided here allows bakers to take a baseline recipe and make independent adjustments consistent with particular environmental conditions (high humidity, or clammy weather, ...) or to simply make adjustments to account for your personal crumb preference, or an addition of milk, butter, honey, etc. This method also allows bakers to encode environmental factors and taste preferences into their recipes from the beginning, creating a mathematically exact recipe from scratch, eliminating the need for costly and disappointing experiments, not to mention annoying iterative calculations. 
 
-
+[Dec 05 2023: This page is pending update, as the only MathJax plug-in is no longer functional and Github now natively supports LaTeX equations. Yay.]
 
 #### Definitions
 
