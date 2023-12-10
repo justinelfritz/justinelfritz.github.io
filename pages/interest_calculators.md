@@ -24,6 +24,7 @@ Alternatively we may specify the desired payoff time $$K$$ and deduce the requir
 
 $$x=-P\frac{1-R}{1-R^{-K}}$$
 
+---
 
 The total interest paid over the lifetime of payments is then
 
