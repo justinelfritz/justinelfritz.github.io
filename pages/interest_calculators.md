@@ -20,11 +20,11 @@ $$K=-\frac{1}{ln(R)}ln(1+\frac{P}{x}\left(1-R\right))$$.
 
 
 #### Case 2: Input desired payment duration
-Alternatively we may specify the desired payoff time $$K$$ and deduce the required payment amount $$x$$: 
+Alternatively we may specify the desired payoff time $$K$$ and deduce the required payment amount, which is
 
-$$x=-P\frac{1-R}{1-R^{-K}}$$
+$$x=-P\frac{1-R}{1-R^{-K}}$$.
 
 
-The total interest paid over the lifetime of payments is then
+Using a mixture of the above inputs, the total interest paid over the lifetime of payments is finally
 
 $$Q=x\left(K-R\frac{1-R^K}{1-R}\right)-P(1-R^K)$$.
