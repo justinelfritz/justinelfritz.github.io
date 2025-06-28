@@ -9,7 +9,7 @@ During Spring and Summer 2025 I am mapping the [Chesapeake & Ohio Canal](https:/
 
 The tables below contain milepost information for the GAP trail. Mileage info for C&O is being added soon.
 
-| <h3> Location </h3> | <h3> Cumberland <br> Distance </h3> | <h3> Pittsburgh <br>  Distance </h3> | <h3> Georgetown <br>  Distance </h3> |
+| ### Location | ### Cumberland <br> Distance | ### Pittsburgh <br> Distance | ### Georgetown <br>  Distance |
 |:---------|:-------:|:--------:|:-------:|
 |**Pittsburgh Point State Park**|	150| 0 | 335 |
 |**Hot Metal Bridge**|	145| 5 | 330 |
