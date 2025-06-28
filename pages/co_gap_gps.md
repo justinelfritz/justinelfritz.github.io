@@ -1,7 +1,7 @@
 ---
 layout: page
 title: GPS Mapping of C&O Canal and Great Allegheny Passage
-description: 
+description: collection of GPS files for C&O canal and Great Allegheny Passage
 ---
 
 #### Motivation
