@@ -7,6 +7,28 @@ description: collection of GPS files for C&O canal and Great Allegheny Passage
 #### Motivation
 During Spring and Summer 2025 I mapped the [Chesapeake & Ohio Canal](https://www.nps.gov/choh/index.htm) (C&O Canal) between Washington D.C. and Cumberland MD and the [Great Allegheny Passage](https://gaptrail.org/) (GAP) between Cumberland MD to Pittsburgh PA by bicycle. Precise GPS and elevation data were collected for the trail and are shared freely here as standard GPX files. Having reliable, accurate data can empower reluctant cyclists and remove uncertainty during planning. 
 
+#### GPX Files
+
+* **Full Route** (Pittsburgh -> DC): [GPX File](<co_gap_gpx_data/Pittsburgh - Georgetown (GAP and C&O.gpx>) (335 mi)
+* Pittsburgh PA - Ohiopyle PA: [GPX File](co_gap_gpx_data/Pittsburgh-Ohiopyle.gpx) (72 mi)
+* Ohiopyle PA - Fort Hill PA: [GPX File](co_gap_gpx_data/Ohiopyle-FortHill.gpx) (24 mi)
+* Fort Hill PA - Meyersdale PA: [GPX File](co_gap_gpx_data/FortHill-Meyersdale.gpx) (22 mi)
+* Meyersdale PA - Lavale MD: [GPX File](co_gap_gpx_data/Meyersdale-Lavale.gpx) (27 mi)
+* Lavale MD - Spring Gap MD: [GPX File](co_gap_gpx_data/Lavale-SpringGap.gpx) (17 mi)
+* Spring Gap MD - Paw Paw WV: [GPX File](co_gap_gpx_data/SpringGap-PawPaw.gpx) (17 mi)
+* Paw Paw WV - Little Orleans MD: [GPX File](co_gap_gpx_data/PawPaw-LittleOrleans.gpx) (14 mi)
+* Little Orleans MD - Hancock MD: [GPX File](LittleOrleans-Hancock.gpx) (17 mi)
+* Hancock MD - Williamsport MD: [GPX File](Hancock-Williamsport.gpx) (25 mi)
+* Williamsport MD - Shepherdstown WV: [GPX File](Williamsport-Shepherdstown.gpx) (27 mi)
+* Shepherdstown WV - Georgetown DC: [GPX File](Shepherdstown-Georgetown.gpx) (74 mi)
+
+
+GPX file processing accomplished using the incredibly helpful and slick [gpx.studio](https://gpx.studio).
+
+---
+
+#### GAP and C&O Mileage Reference
+
 The tables below contain milepost information for the GAP trail. Mileage info for C&O is being added soon.
 
 | Location | Cumberland <br> Distance | | Pittsburgh <br> Distance | | Georgetown <br>  Distance |
@@ -56,20 +78,3 @@ The tables below contain milepost information for the GAP trail. Mileage info fo
 |**Georgetown Terminus** | 185 |  |335 |  | 0 |
 
 
-#### GPX Files
-
-* **Full Route** (Pittsburgh -> DC): [GPX File](<co_gap_gpx_data/Pittsburgh - Georgetown (GAP and C&O.gpx>) (335 mi)
-* Pittsburgh PA - Ohiopyle PA: [GPX File](co_gap_gpx_data/Pittsburgh-Ohiopyle.gpx) (72 mi)
-* Ohiopyle PA - Fort Hill PA: [GPX File](co_gap_gpx_data/Ohiopyle-FortHill.gpx) (24 mi)
-* Fort Hill PA - Meyersdale PA: [GPX File](co_gap_gpx_data/FortHill-Meyersdale.gpx) (22 mi)
-* Meyersdale PA - Lavale MD: [GPX File](co_gap_gpx_data/Meyersdale-Lavale.gpx) (27 mi)
-* Lavale MD - Spring Gap MD: [GPX File](co_gap_gpx_data/Lavale-SpringGap.gpx) (17 mi)
-* Spring Gap MD - Paw Paw WV: [GPX File](co_gap_gpx_data/SpringGap-PawPaw.gpx) (17 mi)
-* Paw Paw WV - Little Orleans MD: [GPX File](co_gap_gpx_data/PawPaw-LittleOrleans.gpx) (14 mi)
-* Little Orleans MD - Hancock MD: [GPX File](LittleOrleans-Hancock.gpx) (17 mi)
-* Hancock MD - Williamsport MD: [GPX File](Hancock-Williamsport.gpx) (25 mi)
-* Williamsport MD - Shepherdstown WV: [GPX File](Williamsport-Shepherdstown.gpx) (27 mi)
-* Shepherdstown WV - Georgetown DC: [GPX File](Shepherdstown-Georgetown.gpx) (74 mi)
-
-
-GPX file processing accomplished using the incredibly helpful and slick [gpx.studio](https://gpx.studio).
