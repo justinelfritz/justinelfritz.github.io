@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City Desirability Comparison Tool</title>
+    <!-- DataTables CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/responsive/2.4.1/css/responsive.dataTables.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/buttons/2.3.6/css/buttons.dataTables.min.css">
+    
+    <!-- jQuery and DataTables JS -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/responsive/2.4.1/js/dataTables.responsive.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/buttons/2.3.6/js/dataTables.buttons.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/buttons/2.3.6/js/buttons.html5.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/pdfmake.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/vfs_fonts.js"></script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+        
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 25px;
+        }
+        
+        .table-container {
+            background: #fff;
+            border-radius: 8px;
+            padding: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            margin: 0 auto;
+            max-width: 95%;
+        }
+        
+        .dataTables_wrapper .dataTables_filter {
+            margin-bottom: 15px;
+            float: right;
+        }
+        
+        .score-input {
+            width: 50px;
+            text-align: center;
+            padding: 4px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        
+        .weight-item label {
+            width: 70px;
+        }
+
+        table.dataTable tbody td {
+            vertical-align: middle;
+            padding: 4px 8px;
+        }
+        
+        /* Coloring for scores */
+        .score-high {
+            background-color: #e6ffe6 !important;
+        }
+        
+        .score-medium {
+            background-color: #fff9e6 !important;
+        }
+        
+        .score-low {
+            background-color: #ffe6e6 !important;
+        }
+        
+        td.highlight {
+            background-color: rgba(var(--dt-row-hover), 0.052) !important;
+        }
+
+        .total-score {
+            font-weight: bold;
+            background-color: #f0f0f0;
+        }
+        
+        #city-comparison_filter input {
+            padding: 6px 10px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+        
+        .dt-buttons {
+            margin-bottom: 15px;
+            float: left;
+        }
+        
+        .dt-button {
+            padding: 6px 12px;
+            margin-right: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            background-color: #f8f9fa;
+            cursor: pointer;
+        }
+        
+        .dt-button:hover {
+            background-color: #e9ecef;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>City Desirability Comparison Tool</h1>
+        
+        <div class="controls">
+            <h3>Category Weights</h3>
+            <p class="note">Assign weights for each category (1-10). A higher number assigned to a category means greater influence on the final score.</p>
+            
+            <div class="weight-container">
+                <div class="weight-item">
+                    <input type="number" id="weight-home-price" value="8" min="1" max="10" class="weight-input">
+                    <label for="weight-home-price">Median Home Prices</label>
+                </div>
+                
+                <div class="weight-item">
+                    <input type="number" id="weight-cost-of-living" value="7" min="1" max="10" class="weight-input">
+                    <label for="weight-cost-of-living">Cost of Living</label>
+                </div>
+                
+                <div class="weight-item">
+                    <input type="number" id="weight-crime" value="6" min="1" max="10" class="weight-input">
+                    <label for="weight-crime">Property Crime Rate</label>
+                </div>
+                
+                <div class="weight-item">
+                    <input type="number" id="weight-outdoors" value="8" min="1" max="10" class="weight-input">
+                    <label for="weight-outdoors">Outdoor Activities</label>
+                </div>
+                
+                <div class="weight-item">
+                    <input type="number" id="weight-art-music" value="6" min="1" max="10" class="weight-input">
+                    <label for="weight-art-music">Art & Music Scene</label>
+                </div>
+                
+                <div class="weight-item">
+                    <input type="number" id="weight-environment" value="7" min="1" max="10" class="weight-input">
+                    <label for="weight-environment">Air & Water Quality</label>
+                </div>
+                
+                <div class="weight-item">
+                    <input type="number" id="weight-cultural" value="5" min="1" max="10" class="weight-input">
+                    <label for="weight-cultural">Cultural Institutions</label>
+                </div>
+                
+                <div class="weight-item">
+                    <input type="number" id="weight-tech-jobs" value="9" min="1" max="10" class="weight-input">
+                    <label for="weight-tech-jobs">Physics/Data/AI Jobs</label>
+
+                </div>
+                
+                <div class="weight-item">
+                    <input type="number" id="weight-climate" value="7" min="1" max="10" class="weight-input">
+                    <label for="weight-climate">Pleasant Climate</label>
+
+                </div>
+                
+                <div class="weight-item">
+                    <input type="number" id="weight-healthcare" value="8" min="1" max="10" class="weight-input">
+                    <label for="weight-healthcare">Healthcare Access</label>
+
+                </div>
+
+                <div class="weight-item">
+                    <input type="number" id="weight-proximity" value="5" min="1" max="10" class="weight-input">
+                    <label for="weight-proximity">Proximity</label>
+
+                </div>
+            </div>
+        </div>
+        
+        <div class="table-container">
+            <table id="city-comparison" class="display responsive nowrap" style="width:100%">
+                <thead>
+                    <tr>
+                        <th onclick="sortTable(0)">City</th>
+                        <th onclick="sortTable(1)">Metro <br> Population</th>
+                        <th onclick="sortTable(2)">Median <br> Home Price</th>
+                        <th onclick="sortTable(3)">Cost of <br> Living</th>
+                        <th onclick="sortTable(4)">Property <br> Crime Rate</th>
+                        <th onclick="sortTable(5)">Outdoor <br> Activities</th>
+                        <th onclick="sortTable(6)">Art & Music</th>
+                        <th onclick="sortTable(7)">Air & Water <br> Quality</th>
+                        <th onclick="sortTable(8)">Cultural <br> Institutions</th>
+                        <th onclick="sortTable(9)">Tech Jobs</th>
+                        <th onclick="sortTable(10)">Pleasant <br> Climate</th>
+                        <th onclick="sortTable(11)">Healthcare <br> Access</th>
+                        <th onclick="sortTable(12)">Proximity</th>
+                        <th onclick="sortTable(13)">Total <br> Score</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="city-name">Cumberland, MD</td>
+                        <td>95044</td>
+                        <td><input type="number" value="9" min="1" max="10" class="score-input" data-category="home-price"></td>
+                        <td><input type="number" value="9" min="1" max="10" class="score-input" data-category="cost-of-living"></td>
+                        <td><input type="number" value="5" min="1" max="10" class="score-input" data-category="crime"></td>
+                        <td><input type="number" value="7" min="1" max="10" class="score-input" data-category="outdoors"></td>
+                        <td><input type="number" value="4" min="1" max="10" class="score-input" data-category="art-music"></td>
+                        <td><input type="number" value="6" min="1" max="10" class="score-input" data-category="environment"></td>
+                        <td><input type="number" value="3" min="1" max="10" class="score-input" data-category="cultural"></td>
+                        <td><input type="number" value="2" min="1" max="10" class="score-input" data-category="tech-jobs"></td>
+                        <td><input type="number" value="5" min="1" max="10" class="score-input" data-category="climate"></td>
+                        <td><input type="number" value="4" min="1" max="10" class="score-input" data-category="healthcare"></td>
+                        <td><input type="number" value="7" min="1" max="10" class="score-input" data-category="proximity"></td>
+                        <td class="score-cell">0</td>
+                    </tr>
+                    <tr>
+                        <td class="city-name">Charlottesville, VA</td>
+                        <td>221524</td>
+                        <td><input type="number" value="5" min="1" max="10" class="score-input" data-category="home-price"></td>
+                        <td><input type="number" value="6" min="1" max="10" class="score-input" data-category="cost-of-living"></td>
+                        <td><input type="number" value="7" min="1" max="10" class="score-input" data-category="crime"></td>
+                        <td><input type="number" value="8" min="1" max="10" class="score-input" data-category="outdoors"></td>
+                        <td><input type="number" value="8" min="1" max="10" class="score-input" data-category="art-music"></td>
+                        <td><input type="number" value="8" min="1" max="10" class="score-input" data-category="environment"></td>
+                        <td><input type="number" value="8" min="1" max="10" class="score-input" data-category="cultural"></td>
+                        <td><input type="number" value="7" min="1" max="10" class="score-input" data-category="tech-jobs"></td>
+                        <td><input type="number" value="7" min="1" max="10" class="score-input" data-category="climate"></td>
+                        <td><input type="number" value="8" min="1" max="10" class="score-input" data-category="healthcare"></td>
+                        <td><input type="number" value="8" min="1" max="10" class="score-input" data-category="proximity"></td>
+                        <td class="score-cell">0</td>
+                    </tr>
+                    <tr>
+                        <td class="city-name">Boise, ID</td>
+                        <td>764718</td>
+                        <td><input type="number" value="4" min="1" max="10" class="score-input" data-category="home-price"></td>
+                        <td><input type="number" value="5" min="1" max="10" class="score-input" data-category="cost-of-living"></td>
+                        <td><input type="number" value="6" min="1" max="10" class="score-input" data-category="crime"></td>
+                        <td><input type="number" value="10" min="1" max="10" class="score-input" data-category="outdoors"></td>
+                        <td><input type="number" value="6" min="1" max="10" class="score-input" data-category="art-music"></td>
+                        <td><input type="number" value="7" min="1" max="10" class="score-input" data-category="environment"></td>
+                        <td><input type="number" value="5" min="1" max="10" class="score-input" data-category="cultural"></td>
+                        <td><input type="number" value="6" min="1" max="10" class="score-input" data-category="tech-jobs"></td>
+                        <td><input type="number" value="7" min="1" max="10" class="score-input" data-category="climate"></td>
+                        <td><input type="number" value="7" min="1" max="10" class="score-input" data-category="healthcare"></td>
+                        <td><input type="number" value="4" min="1" max="10" class="score-input" data-category="proximity"></td>
+                        <td class="score-cell">0</td>
+                    </tr>
+                    <tr>
+                        <td class="city-name">Bloomington, IN</td>
+                        <td>175506</td>
+                        <td><input type="number" value="7" min="1" max="10" class="score-input" data-category="home-price"></td>
+                        <td><input type="number" value="7" min="1" max="10" class="score-input" data-category="cost-of-living"></td>
+                        <td><input type="number" value="6" min="1" max="10" class="score-input" data-category="crime"></td>
+                        <td><input type="number" value="6" min="1" max="10" class="score-input" data-category="outdoors"></td>
+                        <td><input type="number" value="8" min="1" max="10" class="score-input" data-category="art-music"></td>
+                        <td><input type="number" value="7" min="1" max="10" class="score-input" data-category="environment"></td>
+                        <td><input type="number" value="7" min="1" max="10" class="score-input" data-category="cultural"></td>
+                        <td><input type="number" value="7" min="1" max="10" class="score-input" data-category="tech-jobs"></td>
+                        <td><input type="number" value="5" min="1" max="10" class="score-input" data-category="climate"></td>
+                        <td><input type="number" value="7" min="1" max="10" class="score-input" data-category="healthcare"></td>
+                        <td><input type="number" value="6" min="1" max="10" class="score-input" data-category="proximity"></td>
+                        <td class="score-cell">0</td>
+                    </tr>
+                    <tr>
+                        <td class="city-name">Ann Arbor, MI</td>
+                        <td>372258</td>
+                        <td><input type="number" value="4" min="1" max="10" class="score-input" data-category="home-price"></td>
+                        <td><input type="number" value="5" min="1" max="10" class="score-input" data-category="cost-of-living"></td>
+                        <td><input type="number" value="7" min="1" max="10" class="score-input" data-category="crime"></td>
+                        <td><input type="number" value="7" min="1" max="10" class="score-input" data-category="outdoors"></td>
+                        <td><input type="number" value="9" min="1" max="10" class="score-input" data-category="art-music"></td>
+                        <td><input type="number" value="7" min="1" max="10" class="score-input" data-category="environment"></td>
+                        <td><input type="number" value="9" min="1" max="10" class="score-input" data-category="cultural"></td>
+                        <td><input type="number" value="9" min="1" max="10" class="score-input" data-category="tech-jobs"></td>
+                        <td><input type="number" value="4" min="1" max="10" class="score-input" data-category="climate"></td>
+                        <td><input type="number" value="9" min="1" max="10" class="score-input" data-category="healthcare"></td>
+                        <td><input type="number" value="7" min="1" max="10" class="score-input" data-category="proximity"></td>
+                        <td class="score-cell">0</td>
+                    </tr>
+                    <tr>
+                        <td class="city-name">Burlington, VT</td>
+                        <td>225562</td>
+                        <td><input type="number" value="3" min="1" max="10" class="score-input" data-category="home-price"></td>
+                        <td><input type="number" value="4" min="1" max="10" class="score-input" data-category="cost-of-living"></td>
+                        <td><input type="number" value="8" min="1" max="10" class="score-input" data-category="crime"></td>
+                        <td><input type="number" value="9" min="1" max="10" class="score-input" data-category="outdoors"></td>
+                        <td><input type="number" value="8" min="1" max="10" class="score-input" data-category="art-music"></td>
+                        <td><input type="number" value="9" min="1" max="10" class="score-input" data-category="environment"></td>
+                        <td><input type="number" value="6" min="1" max="10" class="score-input" data-category="cultural"></td>
+                        <td><input type="number" value="5" min="1" max="10" class="score-input" data-category="tech-jobs"></td>
+                        <td><input type="number" value="3" min="1" max="10" class="score-input" data-category="climate"></td>
+                        <td><input type="number" value="7" min="1" max="10" class="score-input" data-category="healthcare"></td>
+                        <td><input type="number" value="6" min="1" max="10" class="score-input" data-category="proximity"></td>
+                        <td class="score-cell">0</td>
+                    </tr>
+		            <tr>
+                        <td class="city-name">Pittsburgh, PA</td>
+                        <td>2457000</td>
+                        <td><input type="number" value="8" min="1" max="10" class="score-input" data-category="home-price"></td>
+                        <td><input type="number" value="7" min="1" max="10" class="score-input" data-category="cost-of-living"></td>
+                        <td><input type="number" value="5" min="1" max="10" class="score-input" data-category="crime"></td>
+                        <td><input type="number" value="7" min="1" max="10" class="score-input" data-category="outdoors"></td>
+                        <td><input type="number" value="8" min="1" max="10" class="score-input" data-category="art-music"></td>
+                        <td><input type="number" value="5" min="1" max="10" class="score-input" data-category="environment"></td>
+                        <td><input type="number" value="8" min="1" max="10" class="score-input" data-category="cultural"></td>
+                        <td><input type="number" value="8" min="1" max="10" class="score-input" data-category="tech-jobs"></td>
+                        <td><input type="number" value="4" min="1" max="10" class="score-input" data-category="climate"></td>
+                        <td><input type="number" value="9" min="1" max="10" class="score-input" data-category="healthcare"></td>
+                        <td><input type="number" value="8" min="1" max="10" class="score-input" data-category="proximity"></td>
+                        <td class="score-cell">0</td>
+                    </tr>
+                    <tr>
+                        <td class="city-name">Asheville, NC</td>
+                        <td>417202</td>
+                        <td><input type="number" value="4" min="1" max="10" class="score-input" data-category="home-price"></td>
+                        <td><input type="number" value="5" min="1" max="10" class="score-input" data-category="cost-of-living"></td>
+                        <td><input type="number" value="5" min="1" max="10" class="score-input" data-category="crime"></td>
+                        <td><input type="number" value="10" min="1" max="10" class="score-input" data-category="outdoors"></td>
+                        <td><input type="number" value="9" min="1" max="10" class="score-input" data-category="art-music"></td>
+                        <td><input type="number" value="8" min="1" max="10" class="score-input" data-category="environment"></td>
+                        <td><input type="number" value="7" min="1" max="10" class="score-input" data-category="cultural"></td>
+                        <td><input type="number" value="4" min="1" max="10" class="score-input" data-category="tech-jobs"></td>
+                        <td><input type="number" value="8" min="1" max="10" class="score-input" data-category="climate"></td>
+                        <td><input type="number" value="7" min="1" max="10" class="score-input" data-category="healthcare"></td>
+                        <td><input type="number" value="7" min="1" max="10" class="score-input" data-category="proximity"></td>
+                        <td class="score-cell">0</td>
+                    </tr>
+                    <tr>
+                        <td class="city-name">Raleigh, NC</td>
+                        <td>1509231</td>
+                        <td><input type="number" value="5" min="1" max="10" class="score-input" data-category="home-price"></td>
+                        <td><input type="number" value="6" min="1" max="10" class="score-input" data-category="cost-of-living"></td>
+                        <td><input type="number" value="6" min="1" max="10" class="score-input" data-category="crime"></td>
+                        <td><input type="number" value="6" min="1" max="10" class="score-input" data-category="outdoors"></td>
+                        <td><input type="number" value="7" min="1" max="10" class="score-input" data-category="art-music"></td>
+                        <td><input type="number" value="7" min="1" max="10" class="score-input" data-category="environment"></td>
+                        <td><input type="number" value="7" min="1" max="10" class="score-input" data-category="cultural"></td>
+                        <td><input type="number" value="9" min="1" max="10" class="score-input" data-category="tech-jobs"></td>
+                        <td><input type="number" value="7" min="1" max="10" class="score-input" data-category="climate"></td>
+                        <td><input type="number" value="9" min="1" max="10" class="score-input" data-category="healthcare"></td>
+                        <td><input type="number" value="8" min="1" max="10" class="score-input" data-category="proximity"></td>
+                        <td class="score-cell">0</td>
+                    </tr>
+                    <tr>
+                        <td class="city-name">Portland, ME</td>
+                        <td>556893</td>
+                        <td><input type="number" value="3" min="1" max="10" class="score-input" data-category="home-price"></td>
+                        <td><input type="number" value="4" min="1" max="10" class="score-input" data-category="cost-of-living"></td>
+                        <td><input type="number" value="7" min="1" max="10" class="score-input" data-category="crime"></td>
+                        <td><input type="number" value="9" min="1" max="10" class="score-input" data-category="outdoors"></td>
+                        <td><input type="number" value="8" min="1" max="10" class="score-input" data-category="art-music"></td>
+                        <td><input type="number" value="9" min="1" max="10" class="score-input" data-category="environment"></td>
+                        <td><input type="number" value="7" min="1" max="10" class="score-input" data-category="cultural"></td>
+                        <td><input type="number" value="5" min="1" max="10" class="score-input" data-category="tech-jobs"></td>
+                        <td><input type="number" value="4" min="1" max="10" class="score-input" data-category="climate"></td>
+                        <td><input type="number" value="7" min="1" max="10" class="score-input" data-category="healthcare"></td>
+                        <td><input type="number" value="7" min="1" max="10" class="score-input" data-category="proximity"></td>
+                        <td class="score-cell">0</td>
+                    </tr>
+                    <tr>
+                        <td class="city-name">Madison, WI</td>
+                        <td>680796</td>
+                        <td><input type="number" value="5" min="1" max="10" class="score-input" data-category="home-price"></td>
+                        <td><input type="number" value="6" min="1" max="10" class="score-input" data-category="cost-of-living"></td>
+                        <td><input type="number" value="7" min="1" max="10" class="score-input" data-category="crime"></td>
+                        <td><input type="number" value="8" min="1" max="10" class="score-input" data-category="outdoors"></td>
+                        <td><input type="number" value="8" min="1" max="10" class="score-input" data-category="art-music"></td>
+                        <td><input type="number" value="8" min="1" max="10" class="score-input" data-category="environment"></td>
+                        <td><input type="number" value="8" min="1" max="10" class="score-input" data-category="cultural"></td>
+                        <td><input type="number" value="8" min="1" max="10" class="score-input" data-category="tech-jobs"></td>
+                        <td><input type="number" value="3" min="1" max="10" class="score-input" data-category="climate"></td>
+                        <td><input type="number" value="8" min="1" max="10" class="score-input" data-category="healthcare"></td>
+                        <td><input type="number" value="6" min="1" max="10" class="score-input" data-category="proximity"></td>
+                        <td class="score-cell">0</td>
+                    </tr>
+                    <tr>
+                        <td class="city-name">Durham, NC</td>
+                        <td>608879</td>
+                        <td><input type="number" value="6" min="1" max="10" class="score-input" data-category="home-price"></td>
+                        <td><input type="number" value="6" min="1" max="10" class="score-input" data-category="cost-of-living"></td>
+                        <td><input type="number" value="5" min="1" max="10" class="score-input" data-category="crime"></td>
+                        <td><input type="number" value="6" min="1" max="10" class="score-input" data-category="outdoors"></td>
+                        <td><input type="number" value="8" min="1" max="10" class="score-input" data-category="art-music"></td>
+                        <td><input type="number" value="7" min="1" max="10" class="score-input" data-category="environment"></td>
+                        <td><input type="number" value="7" min="1" max="10" class="score-input" data-category="cultural"></td>
+                        <td><input type="number" value="9" min="1" max="10" class="score-input" data-category="tech-jobs"></td>
+                        <td><input type="number" value="7" min="1" max="10" class="score-input" data-category="climate"></td>
+                        <td><input type="number" value="9" min="1" max="10" class="score-input" data-category="healthcare"></td>
+                        <td><input type="number" value="8" min="1" max="10" class="score-input" data-category="proximity"></td>
+                        <td class="score-cell">0</td>
+                    </tr>
+                    <tr>
+                        <td class="city-name">Knoxville, TN</td>
+                        <td>868546</td>
+                        <td><input type="number" value="7" min="1" max="10" class="score-input" data-category="home-price"></td>
+                        <td><input type="number" value="7" min="1" max="10" class="score-input" data-category="cost-of-living"></td>
+                        <td><input type="number" value="5" min="1" max="10" class="score-input" data-category="crime"></td>
+                        <td><input type="number" value="8" min="1" max="10" class="score-input" data-category="outdoors"></td>
+                        <td><input type="number" value="6" min="1" max="10" class="score-input" data-category="art-music"></td>
+                        <td><input type="number" value="6" min="1" max="10" class="score-input" data-category="environment"></td>
+                        <td><input type="number" value="6" min="1" max="10" class="score-input" data-category="cultural"></td>
+                        <td><input type="number" value="6" min="1" max="10" class="score-input" data-category="tech-jobs"></td>
+                        <td><input type="number" value="6" min="1" max="10" class="score-input" data-category="climate"></td>
+                        <td><input type="number" value="7" min="1" max="10" class="score-input" data-category="healthcare"></td>
+                        <td><input type="number" value="7" min="1" max="10" class="score-input" data-category="proximity"></td>
+                        <td class="score-cell">0</td>
+                    </tr>
+                    <tr>
+                        <td class="city-name">Nashua, NH</td>
+                        <td>242984</td>
+                        <td><input type="number" value="5" min="1" max="10" class="score-input" data-category="home-price"></td>
+                        <td><input type="number" value="5" min="1" max="10" class="score-input" data-category="cost-of-living"></td>
+                        <td><input type="number" value="7" min="1" max="10" class="score-input" data-category="crime"></td>
+                        <td><input type="number" value="7" min="1" max="10" class="score-input" data-category="outdoors"></td>
+                        <td><input type="number" value="5" min="1" max="10" class="score-input" data-category="art-music"></td>
+                        <td><input type="number" value="8" min="1" max="10" class="score-input" data-category="environment"></td>
+                        <td><input type="number" value="5" min="1" max="10" class="score-input" data-category="cultural"></td>
+                        <td><input type="number" value="7" min="1" max="10" class="score-input" data-category="tech-jobs"></td>
+                        <td><input type="number" value="4" min="1" max="10" class="score-input" data-category="climate"></td>
+                        <td><input type="number" value="7" min="1" max="10" class="score-input" data-category="healthcare"></td>
+                        <td><input type="number" value="8" min="1" max="10" class="score-input" data-category="proximity"></td>
+                        <td class="score-cell">0</td>
+                    </tr>
+                    <tr>
+                        <td class="city-name">Winchester, VA</td>
+                        <td>145000</td>
+                        <td><input type="number" value="6" min="1" max="10" class="score-input" data-category="home-price"></td>
+                        <td><input type="number" value="6" min="1" max="10" class="score-input" data-category="cost-of-living"></td>
+                        <td><input type="number" value="7" min="1" max="10" class="score-input" data-category="crime"></td>
+                        <td><input type="number" value="7" min="1" max="10" class="score-input" data-category="outdoors"></td>
+                        <td><input type="number" value="5" min="1" max="10" class="score-input" data-category="art-music"></td>
+                        <td><input type="number" value="8" min="1" max="10" class="score-input" data-category="environment"></td>
+                        <td><input type="number" value="5" min="1" max="10" class="score-input" data-category="cultural"></td>
+                        <td><input type="number" value="5" min="1" max="10" class="score-input" data-category="tech-jobs"></td>
+                        <td><input type="number" value="6" min="1" max="10" class="score-input" data-category="climate"></td>
+                        <td><input type="number" value="6" min="1" max="10" class="score-input" data-category="healthcare"></td>
+                        <td><input type="number" value="7" min="1" max="10" class="score-input" data-category="proximity"></td>
+                        <td class="score-cell">0</td>
+                    </tr>
+                    <tr>
+                        <td class="city-name">Santa Fe, NM</td>
+                        <td>154823</td>
+                        <td><input type="number" value="3" min="1" max="10" class="score-input" data-category="home-price"></td>
+                        <td><input type="number" value="4" min="1" max="10" class="score-input" data-category="cost-of-living"></td>
+                        <td><input type="number" value="4" min="1" max="10" class="score-input" data-category="crime"></td>
+                        <td><input type="number" value="9" min="1" max="10" class="score-input" data-category="outdoors"></td>
+                        <td><input type="number" value="10" min="1" max="10" class="score-input" data-category="art-music"></td>
+                        <td><input type="number" value="8" min="1" max="10" class="score-input" data-category="environment"></td>
+                        <td><input type="number" value="9" min="1" max="10" class="score-input" data-category="cultural"></td>
+                        <td><input type="number" value="7" min="1" max="10" class="score-input" data-category="tech-jobs"></td>
+                        <td><input type="number" value="8" min="1" max="10" class="score-input" data-category="climate"></td>
+                        <td><input type="number" value="6" min="1" max="10" class="score-input" data-category="healthcare"></td>
+                        <td><input type="number" value="5" min="1" max="10" class="score-input" data-category="proximity"></td>
+                        <td class="score-cell">0</td>
+                    </tr>
+                    <tr>
+                        <td class="city-name">San Antonio, TX</td>
+                        <td>2601788</td>
+                        <td><input type="number" value="7" min="1" max="10" class="score-input" data-category="home-price"></td>
+                        <td><input type="number" value="7" min="1" max="10" class="score-input" data-category="cost-of-living"></td>
+                        <td><input type="number" value="4" min="1" max="10" class="score-input" data-category="crime"></td>
+                        <td><input type="number" value="6" min="1" max="10" class="score-input" data-category="outdoors"></td>
+                        <td><input type="number" value="7" min="1" max="10" class="score-input" data-category="art-music"></td>
+                        <td><input type="number" value="5" min="1" max="10" class="score-input" data-category="environment"></td>
+                        <td><input type="number" value="7" min="1" max="10" class="score-input" data-category="cultural"></td>
+                        <td><input type="number" value="6" min="1" max="10" class="score-input" data-category="tech-jobs"></td>
+                        <td><input type="number" value="4" min="1" max="10" class="score-input" data-category="climate"></td>
+                        <td><input type="number" value="8" min="1" max="10" class="score-input" data-category="healthcare"></td>
+                        <td><input type="number" value="7" min="1" max="10" class="score-input" data-category="proximity"></td>
+                        <td class="score-cell">0</td>
+                    </tr>
+                    <tr>
+                        <td class="city-name">Salt Lake City, UT</td>
+                        <td>1257936</td>
+                        <td><input type="number" value="4" min="1" max="10" class="score-input" data-category="home-price"></td>
+                        <td><input type="number" value="5" min="1" max="10" class="score-input" data-category="cost-of-living"></td>
+                        <td><input type="number" value="5" min="1" max="10" class="score-input" data-category="crime"></td>
+                        <td><input type="number" value="10" min="1" max="10" class="score-input" data-category="outdoors"></td>
+                        <td><input type="number" value="6" min="1" max="10" class="score-input" data-category="art-music"></td>
+                        <td><input type="number" value="4" min="1" max="10" class="score-input" data-category="environment"></td>
+                        <td><input type="number" value="6" min="1" max="10" class="score-input" data-category="cultural"></td>
+                        <td><input type="number" value="7" min="1" max="10" class="score-input" data-category="tech-jobs"></td>
+                        <td><input type="number" value="6" min="1" max="10" class="score-input" data-category="climate"></td>
+                        <td><input type="number" value="8" min="1" max="10" class="score-input" data-category="healthcare"></td>
+                        <td><input type="number" value="5" min="1" max="10" class="score-input" data-category="proximity"></td>
+                        <td class="score-cell">0</td>
+                    </tr>
+                    <tr>
+                        <td class="city-name">Athens, GA</td>
+                        <td>215415</td>
+                        <td><input type="number" value="7" min="1" max="10" class="score-input" data-category="home-price"></td>
+                        <td><input type="number" value="7" min="1" max="10" class="score-input" data-category="cost-of-living"></td>
+                        <td><input type="number" value="5" min="1" max="10" class="score-input" data-category="crime"></td>
+                        <td><input type="number" value="6" min="1" max="10" class="score-input" data-category="outdoors"></td>
+                        <td><input type="number" value="9" min="1" max="10" class="score-input" data-category="art-music"></td>
+                        <td><input type="number" value="7" min="1" max="10" class="score-input" data-category="environment"></td>
+                        <td><input type="number" value="6" min="1" max="10" class="score-input" data-category="cultural"></td>
+                        <td><input type="number" value="6" min="1" max="10" class="score-input" data-category="tech-jobs"></td>
+                        <td><input type="number" value="5" min="1" max="10" class="score-input" data-category="climate"></td>
+                        <td><input type="number" value="7" min="1" max="10" class="score-input" data-category="healthcare"></td>
+                        <td><input type="number" value="7" min="1" max="10" class="score-input" data-category="proximity"></td>
+                        <td class="score-cell">0</td>
+                    </tr>
+                    <tr>
+                        <td class="city-name">Chattanooga, TN</td>
+                        <td>562647</td>
+                        <td><input type="number" value="7" min="1" max="10" class="score-input" data-category="home-price"></td>
+                        <td><input type="number" value="8" min="1" max="10" class="score-input" data-category="cost-of-living"></td>
+                        <td><input type="number" value="4" min="1" max="10" class="score-input" data-category="crime"></td>
+                        <td><input type="number" value="9" min="1" max="10" class="score-input" data-category="outdoors"></td>
+                        <td><input type="number" value="7" min="1" max="10" class="score-input" data-category="art-music"></td>
+                        <td><input type="number" value="6" min="1" max="10" class="score-input" data-category="environment"></td>
+                        <td><input type="number" value="6" min="1" max="10" class="score-input" data-category="cultural"></td>
+                        <td><input type="number" value="5" min="1" max="10" class="score-input" data-category="tech-jobs"></td>
+                        <td><input type="number" value="6" min="1" max="10" class="score-input" data-category="climate"></td>
+                        <td><input type="number" value="7" min="1" max="10" class="score-input" data-category="healthcare"></td>
+                        <td><input type="number" value="8" min="1" max="10" class="score-input" data-category="proximity"></td>
+                        <td class="score-cell">0</td>
+                    </tr>
+                    <tr>
+                        <td class="city-name">Greenville, SC</td>
+                        <td>975480</td>
+                        <td><input type="number" value="6" min="1" max="10" class="score-input" data-category="home-price"></td>
+                        <td><input type="number" value="7" min="1" max="10" class="score-input" data-category="cost-of-living"></td>
+                        <td><input type="number" value="5" min="1" max="10" class="score-input" data-category="crime"></td>
+                        <td><input type="number" value="8" min="1" max="10" class="score-input" data-category="outdoors"></td>
+                        <td><input type="number" value="7" min="1" max="10" class="score-input" data-category="art-music"></td>
+                        <td><input type="number" value="7" min="1" max="10" class="score-input" data-category="environment"></td>
+                        <td><input type="number" value="6" min="1" max="10" class="score-input" data-category="cultural"></td>
+                        <td><input type="number" value="6" min="1" max="10" class="score-input" data-category="tech-jobs"></td>
+                        <td><input type="number" value="7" min="1" max="10" class="score-input" data-category="climate"></td>
+                        <td><input type="number" value="7" min="1" max="10" class="score-input" data-category="healthcare"></td>
+                        <td><input type="number" value="8" min="1" max="10" class="score-input" data-category="proximity"></td>
+                        <td class="score-cell">0</td>
+                    </tr>
+                    <tr>
+                        <td class="city-name">Fort Collins, CO</td>
+                        <td>359066</td>
+                        <td><input type="number" value="4" min="1" max="10" class="score-input" data-category="home-price"></td>
+                        <td><input type="number" value="5" min="1" max="10" class="score-input" data-category="cost-of-living"></td>
+                        <td><input type="number" value="6" min="1" max="10" class="score-input" data-category="crime"></td>
+                        <td><input type="number" value="10" min="1" max="10" class="score-input" data-category="outdoors"></td>
+                        <td><input type="number" value="7" min="1" max="10" class="score-input" data-category="art-music"></td>
+                        <td><input type="number" value="7" min="1" max="10" class="score-input" data-category="environment"></td>
+                        <td><input type="number" value="6" min="1" max="10" class="score-input" data-category="cultural"></td>
+                        <td><input type="number" value="7" min="1" max="10" class="score-input" data-category="tech-jobs"></td>
+                        <td><input type="number" value="7" min="1" max="10" class="score-input" data-category="climate"></td>
+                        <td><input type="number" value="7" min="1" max="10" class="score-input" data-category="healthcare"></td>
+                        <td><input type="number" value="7" min="1" max="10" class="score-input" data-category="proximity"></td>
+                        <td class="score-cell">0</td>
+                    </tr>
+                    <tr>
+                        <td class="city-name">Minneapolis, MN</td>
+                        <td>3700000</td>
+                        <td><input type="number" value="6" min="1" max="10" class="score-input" data-category="home-price"></td>
+                        <td><input type="number" value="6" min="1" max="10" class="score-input" data-category="cost-of-living"></td>
+                        <td><input type="number" value="4" min="1" max="10" class="score-input" data-category="crime"></td>
+                        <td><input type="number" value="8" min="1" max="10" class="score-input" data-category="outdoors"></td>
+                        <td><input type="number" value="9" min="1" max="10" class="score-input" data-category="art-music"></td>
+                        <td><input type="number" value="7" min="1" max="10" class="score-input" data-category="environment"></td>
+                        <td><input type="number" value="9" min="1" max="10" class="score-input" data-category="cultural"></td>
+                        <td><input type="number" value="8" min="1" max="10" class="score-input" data-category="tech-jobs"></td>
+                        <td><input type="number" value="2" min="1" max="10" class="score-input" data-category="climate"></td>
+                        <td><input type="number" value="9" min="1" max="10" class="score-input" data-category="healthcare"></td>
+                        <td><input type="number" value="5" min="1" max="10" class="score-input" data-category="proximity"></td>
+                        <td class="score-cell">0</td>
+                    </tr>
+                    <tr>
+                        <td class="city-name">Duluth, MN</td>
+                        <td>280000</td>
+                        <td><input type="number" value="8" min="1" max="10" class="score-input" data-category="home-price"></td>
+                        <td><input type="number" value="8" min="1" max="10" class="score-input" data-category="cost-of-living"></td>
+                        <td><input type="number" value="6" min="1" max="10" class="score-input" data-category="crime"></td>
+                        <td><input type="number" value="10" min="1" max="10" class="score-input" data-category="outdoors"></td>
+                        <td><input type="number" value="6" min="1" max="10" class="score-input" data-category="art-music"></td>
+                        <td><input type="number" value="9" min="1" max="10" class="score-input" data-category="environment"></td>
+                        <td><input type="number" value="5" min="1" max="10" class="score-input" data-category="cultural"></td>
+                        <td><input type="number" value="3" min="1" max="10" class="score-input" data-category="tech-jobs"></td>
+                        <td><input type="number" value="2" min="1" max="10" class="score-input" data-category="climate"></td>
+                        <td><input type="number" value="6" min="1" max="10" class="score-input" data-category="healthcare"></td>
+                        <td><input type="number" value="4" min="1" max="10" class="score-input" data-category="proximity"></td>
+                        <td class="score-cell">0</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="note">
+            <p>Scoring system: 1-10 where 10 is best (most affordable, safest, best access, etc.)</p>
+            <p>Initial scores are pre-populated with estimates based on general data. Initial scores provided by Anthropic Claude (3.7 Sonnet). </p>
+            <p>For home prices and cost of living, higher scores mean more affordable.</p>
+            <p>For crime rates, higher scores mean lower crime rates (safer).</p>
+        </div>
+        
+    </div>
+
+    <script>
+        // Calculate scores when the page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            calculateScores();
+            
+            // Add event listeners to recalculate scores when inputs change
+            const allInputs = document.querySelectorAll('.weight-input, .score-input');
+            allInputs.forEach(input => {
+                input.addEventListener('change', calculateScores);
+            });
+        });
+    </script>
+    <script>
+        function calculateScores() {
+            // Get all weight values
+            const weights = {
+                'home-price': parseInt(document.getElementById('weight-home-price').value),
+                'cost-of-living': parseInt(document.getElementById('weight-cost-of-living').value),
+                'crime': parseInt(document.getElementById('weight-crime').value),
+                'outdoors': parseInt(document.getElementById('weight-outdoors').value),
+                'art-music': parseInt(document.getElementById('weight-art-music').value),
+                'environment': parseInt(document.getElementById('weight-environment').value),
+                'cultural': parseInt(document.getElementById('weight-cultural').value),
+                'tech-jobs': parseInt(document.getElementById('weight-tech-jobs').value),
+                'climate': parseInt(document.getElementById('weight-climate').value),
+                'healthcare': parseInt(document.getElementById('weight-healthcare').value),
+                'proximity': parseInt(document.getElementById('weight-proximity').value)
+            };
+            
+            // Calculate total weight (for normalization)
+            const totalWeight = Object.values(weights).reduce((sum, weight) => sum + weight, 0);
+            
+            // Get all rows except header
+            const rows = document.querySelectorAll('#city-comparison tbody tr');
+            
+            // Calculate score for each city
+            rows.forEach(row => {
+                let totalScore = 0;
+                
+                // Get all score inputs in this row
+                const scoreInputs = row.querySelectorAll('.score-input');
+                
+                // Calculate weighted score
+                scoreInputs.forEach(input => {
+                    const category = input.dataset.category;
+                    const score = parseInt(input.value);
+                    const weight = weights[category];
+                    
+                    totalScore += score * weight;
+                });
+                
+                // Normalize score (out of 100 for easier reading)
+                const normalizedScore = (totalScore / totalWeight) * 10;
+                
+                // Update score cell
+                const scoreCell = row.querySelector('.score-cell');
+                scoreCell.textContent = normalizedScore.toFixed(1);
+            });
+            
+            // Remove any existing highlights
+            document.querySelectorAll('tr.highlight').forEach(row => {
+                row.classList.remove('highlight');
+            });
+        }
+        
+        function highlightBest() {
+            // Get all score cells
+            const scoreElements = document.querySelectorAll('.score-cell');
+            
+            // Find the highest score
+            let highestScore = 0;
+            let highestScoreIndex = -1;
+            
+            scoreElements.forEach((element, index) => {
+                const score = parseFloat(element.textContent);
+                if (score > highestScore) {
+                    highestScore = score;
+                    highestScoreIndex = index;
+                }
+            });
+
+            // Remove any existing highlights
+            document.querySelectorAll('tr.highlight').forEach(row => {
+                row.classList.remove('highlight');
+            });
+            
+            // Highlight the row with the highest score
+            if (highestScoreIndex >= 0) {
+                const rows = document.querySelectorAll('#city-comparison tbody tr');
+                rows[highestScoreIndex].classList.add('highlight');
+            }
+        };
+
+        function sortTable(n) {
+            var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+            table = document.getElementById("city-comparison");
+            switching = true;
+            // Set the sorting direction to ascending:
+            dir = "desc";
+            /* Make a loop that will continue until
+            no switching has been done: */
+            while (switching) {
+                // Start by saying: no switching is done:
+                switching = false;
+                rows = table.rows;
+                /* Loop through all table rows (except the
+                first, which contains table headers): */
+                for (i = 1; i < (rows.length - 1); i++) {
+                    console.log("i1=",i)
+                    // Start by saying there should be no switching:
+                    shouldSwitch = false;
+                    /* Get the two elements you want to compare,
+                    one from current row and one from the next: */
+                    if(n > 0){
+                        x = rows[i].getElementsByTagName("TD")[n];
+                        y = rows[i + 1].getElementsByTagName("TD")[n];
+
+                        let xinput = x.querySelector("input");
+                        let yinput = y.querySelector("input");
+
+                        let xval = parseFloat(xinput.value);
+                        let yval = parseFloat(yinput.value);
+
+                        if (dir == "asc") {
+                            if (xval > yval) {
+                                // If so, mark as a switch and break the loop:
+                            shouldSwitch = true;
+                            break;
+                            }
+                        } else if (dir == "desc") {
+                            if (xval < yval) {
+                                // If so, mark as a switch and break the loop:
+                            shouldSwitch = true;
+                            break;
+                            }
+                        }
+                    } else { /* n==0 */
+                        x = rows[i].getElementsByTagName("TD")[n];
+                        y = rows[i + 1].getElementsByTagName("TD")[n];
+                    
+                        dir = "asc"
+                        /* Check if the two rows should switch place,
+                        based on the direction, asc or desc: */
+                        if (dir == "asc") {
+                            if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+                            // If so, mark as a switch and break the loop:
+                            shouldSwitch = true;
+                            break;
+                            }
+                        } else if (dir == "desc") {
+                            if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+                            // If so, mark as a switch and break the loop:
+                            shouldSwitch = true;
+                            break;
+                            }
+                        }
+                    }
+
+                    var xhtml = x.innerHTML;
+                    var yhtml = y.innerHTML;
+
+                    console.log("i=",i)
+                    console.log("x=",xhtml)
+                    console.log("y=",yhtml)
+                    console.log("xval=",xhtml.value)
+                    console.log("yval=",yhtml.value)
+                    console.log("shouldSwitch=",shouldSwitch)
+                }
+                if (shouldSwitch) {
+                    /* If a switch has been marked, make the switch
+                    and mark that a switch has been done: */
+                    rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+                    switching = true;
+                    // Each time a switch is done, increase this count by 1:
+                    switchcount ++;
+                } else {
+                    /* If no switching has been done AND the direction is "asc",
+                    set the direction to "desc" and run the while loop again. */
+                    if (switchcount == 0 && dir == "asc") {
+                        dir = "desc";
+                        switching = true;
+                    }
+                }
+            }
+        }
+    </script>
+    <script>
+        $(document).ready(function() {
+            // Initialize DataTable
+            const table = $('#city-comparison').DataTable({
+                responsive: true,
+                autoWidth: false,
+                dom: 'Bfrtip',
+                paging: false,
+                columnDefs: [
+                    // Make score columns non-searchable and non-sortable
+                    { targets: 0, 
+                    searchable: false, 
+                    orderable: false,
+                    width: "100px",
+                    className: "dt-left"
+                    },
+                    { targets: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12], 
+                    searchable: false, 
+                    orderable: false,
+                    width: "60px",
+                    className: "dt-center"
+                    },
+                    // Configure total score column
+                    { targets: 13, 
+                    searchable: false,
+                    className: 'total-score',
+                    width: "70px"
+                    }
+                ],
+                // Order by population (column 1) initially in descending order
+                order: [[1, 'desc']]
+            });
+            
+            // Calculate total scores initially
+            calculateScores();
+            
+            // Update scores when inputs change
+            $('.score-input').on('change', function() {
+                calculateScores();
+                
+                // Apply color coding to the scores
+                colorCodeScores();
+                
+                // Redraw the table to reflect changes
+                table.draw();
+            });
+            
+            
+            // Function to apply color coding to the scores
+            function colorCodeScores() {
+                $('.score-input').each(function() {
+                    const value = parseInt($(this).val());
+                    $(this).removeClass('score-low score-medium score-high');
+                    
+                    if (value <= 4) {
+                        $(this).addClass('score-low');
+                    } else if (value <= 7) {
+                        $(this).addClass('score-medium');
+                    } else {
+                        $(this).addClass('score-high');
+                    }
+                });
+            }
+            
+            // Initial color coding
+            colorCodeScores();
+        });
+    </script>
+</body>
+</html>
+                        
