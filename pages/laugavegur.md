@@ -14,8 +14,8 @@ The [Laugavegur](https://www.fi.is/en/hiking-trails/trails/laugavegur) is one of
 
 #### GPX Files
 
-* Landmannalaugur - Hrafntinnusker: [GPX File](laugavegur_gps/.gpx) (12 km)
-* Hrafntinnusker - Álftavatn: [GPX File](laugavegur_gps/.gpx) (12 km)
-* Álftavatn - Emstrur: [GPX File](laugavegur_gps/.gpx) (16 km)
-* Emstrur - Þórsmörk: [GPX File](laugavegur_gps/.gpx) (15 km)
+* Landmannalaugur - Hrafntinnusker: [GPX File](<laugavegur_gps/Laugavegur - Landmannalaugar to Hrafntinnusker.gpx>) (12 km)
+* Hrafntinnusker - Álftavatn: [GPX File](<laugavegur_gps/Laugavegur - Hrafntinnusker to Alftavatn.gpx>) (12 km)
+* Álftavatn - Emstrur: [GPX File](<laugavegur_gps/Laugavegur - Alftavatn to Emstrur.gpx>) (16 km)
+* Emstrur - Þórsmörk: [GPX File](<laugavegur_gps/Laugavegur - Emstrur to Thorsmork.gpx>) (15 km)
 
