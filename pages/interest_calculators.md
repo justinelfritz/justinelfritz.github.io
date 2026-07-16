@@ -10,11 +10,11 @@ One of the most common personal finance tasks is to compute long-term compounded
 
 #### Results
 
-The fundamental iteration for an interest accrual event is $$P'=P(1+r/r_c)$$, where $$r$$ is the annual interest rate, $$r_c$$ is the interest compounding rate (*i.e.,* $$1/12$$ for monthly compounding), $$P$$ is the principal amount, and $$P'$$ is the updated principal. The iterator shorthand is $$R=(1+r/r_c)$$.
+The fundamental iteration for an interest accrual event is $$P'=P(1+r/r_c)$$, where $$r$$ is the annual interest rate, $$r_c$$ is the interest compounding rate (*i.e.,* $$r_c=12$$ for monthly compounding), $$P$$ is the principal amount, and $$P'$$ is the updated principal. The iterator shorthand is $$R=(1+r/r_c)$$.
 
 
 #### Case 1: Input desired payment amount
-Assuming payments of amount $$x$$ are made at the same frequency as $$r_c$$, the payoff time $$K$$ measured in compounding periods (inverse frequency) is
+Assuming payments of amount $$x$$ are made at the same frequency as $$r_c$$, the payoff time $$K$$ measured in compounding periods is
 
 $$K=-\frac{1}{ln(R)}ln(1+\frac{P}{x}\left(1-R\right))$$.
 
