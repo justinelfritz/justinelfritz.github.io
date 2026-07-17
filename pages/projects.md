@@ -12,10 +12,10 @@ description: overviews of individual projects
     margin-top: 2rem;
   }
   .project-card {
-    border: 1px solid #e1e4e8;
+    border: 1px solid #000000;
     border-radius: 6px;
     padding: 1.25rem;
-    background-color: #fff;
+    background-color: #203546;
     transition: transform 0.2s, box-shadow 0.2s;
   }
   .project-card:hover {
@@ -29,11 +29,11 @@ description: overviews of individual projects
   }
   .card-title a {
     text-decoration: none;
-    color: #0366d6;
+    color: #ffffff;
   }
   .card-desc {
     font-size: 0.9rem;
-    color: #586069;
+    color: #bbbbbb;
     line-height: 1.4;
   }
   .card-meta {
