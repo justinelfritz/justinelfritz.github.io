@@ -29,7 +29,7 @@ GPX file processing accomplished using the incredibly helpful and slick [gpx.stu
 
 #### GAP and C&O Mileage Reference
 
-The tables below contain milepost information for the GAP trail. Mileage info for C&O is being added soon.
+The tables below contain milepost information for the GAP trail and C&O Canal. 
 
 | Location | Cumberland <br> Distance | | Pittsburgh <br> Distance | | Georgetown <br>  Distance |
 |:---------|:-------:|:---:|:--------:|:---:|:-------:|
@@ -74,7 +74,71 @@ The tables below contain milepost information for the GAP trail. Mileage info fo
 |**Helmstetter's Curve**|	5|  |145  |  |190  | 
 |**Bone Cave**	|4|  | 146 |  | 189 | 
 |**Cumberland Visitor Center**|	0|  | 150 |  |  185| 
-|*C&O mileage being added*| - | | - |  | - |
-|**Georgetown Terminus** | 185 |  |335 |  | 0 |
+|**Candoc Sports Complex**|	3|  | 153 |  |  182| 
+|**Evitt's Creek Aqueduct**|	4|  | 154 |  |  181|
+|**Evitt's Creek Hiker-Biker Camp**|	5|  | 155 |  |  180| 
+|**Pollock Cemetery**|	8|  | 158 |  |  177|
+|**Iron's Mountain Hiker-Biker Camp**|	9|  | 159 |  |  176| 
+|**Spring Gap Camp**|	11|  | 161 |  |  174|
+|**Pigman's Ferry Hiker-Biker Camp**|	15|  | 165 |  |  169| 
+|**Oldtown**|	18|  | 168 |  |  166|
+|**Potomac Forks Hiker-Biker Camp**|	20|  | 170 |  |  164| 
+|**Town Creek Aqueduct**|	22|  | 172 |  |  162|
+|**Town Creek Hiker-Biker Camp**|	22|  | 172 |  |  162|
+|**Purslane Run Hiker-Biker Camp**|	28|  | 178 |  |  156|
+|**Paw Paw**|	28|  | 178 |  |  156|
+|**Paw Paw Tunnel**|	29|  | 179 |  |  155|
+|**Sorrel Ridge Hiker-Biker Camp**|	30|  | 180 |  |  154|
+|**Stickpile Hill Hiker-Biker Camp**|	35|  | 185 |  |  149|
+|**Devil's Alley Hiker-Biker Camp**|	40|  | 190 |  |  144|
+|**Fifteen Mile Creek Camp**|	44|  | 194 |  |  140|
+|**Indigo Neck Hiker-Biker Camp**|	45|  | 195 |  |  139|
+|**Indigo Tunnel**| 46| | 196 | | 138 |
+|**Cacapon Junction Hiker-Biker Camp**|	51|  | 200 |  |  133|
+|**Leopard's Mill Hiker-Biker Camp**|	55|  | 204 |  |  129|
+|**White Rock Hiker-Biker Camp**|	58|  | 207 |  |  126|
+|**Hancock**| 60| | 209 | | 124 |
+|**Hancock Visitor Center**|	62|  | 211 |  |  122|
+|**Little Pool Hiker-Biker Camp**|	64|  | 213 |  |  120|
+|**Licking Creek Hiker-Biker Camp**|	68|  | 217 |  |  116|
+|**Fort Frederick State Park**|	72|  | 221 |  |  112|
+|**McCoy's Ferry Camp**|	74|  | 223 |  |  110|
+|**North Mountain Hiker-Biker Camp**|	75|  | 224 |  |  109|
+|**Four Locks**|	76|  | 223 |  |  108|
+|**Jordan Junction Hiker-Biker Camp**|	83|  | 230 |  |  102|
+|**Williamsport Visitor Center**|	85|  | 232 |  |  100|
+|**Cumberland Valley Hiker-Biker Camp**|	89|  | 236 |  |  96|
+|**Opequon Junction Hiker-Biker Camp**|	94|  | 241 |  |  91|
+|**Big Woods Hiker-Biker Camp**|	102|  | 249 |  |  83|
+|**Taylor's Landing**|	104|  | 251 |  |  81|
+|**Horseshoe Bend Hiker-Biker Camp**|	105|  | 252 |  |  80|
+|**Snyder's Landing**|	108|  | 255 |  |  77|
+|**Killiansburg Cave Hiker-Biker Camp**|	109|  | 256 |  |  76|
+|**Shepherdstown Visitor Center**|	112|  | 259 |  |  73|
+|**Antietam Creek Camp**|	115|  | 262 |  |  70|
+|**Mountain Lock**|	117|  | 264 |  |  68|
+|**Dargan Bend**|	120|  | 267 |  |  65|
+|**Huckleberry Hill Hiker-Biker Camp**|	122|  | 269 |  |  63|
+|**Harper's Ferry**|	124|  | 271 |  |  61|
+|**Brunswick Visitor Center**|	130|  | 277 |  |  55|
+|**Brunswick Camp**|	131|  | 278 |  |  54|
+|**Bald Eagle Hiker-Biker Camp**|	134|  | 281 |  |  51|
+|**Point Of Rocks**|	137|  | 284 |  |  48|
+|**Calico Rocks Hiker-Biker Camp**|	137|  | 284 |  |  48|
+|**Noland's Ferry**|	140|  | 287 |  |  45|
+|**Indian Flats Hiker-Biker Camp**|	142|  | 289 |  |  43|
+|**Marble Quarry Hiker-Biker Camp**|	146|  | 293 |  |  39|
+|**White's Ferry**|	149|  | 297 |  |  35|
+|**Turtle Run Hiker-Biker Camp**|	150|  | 298 |  |  34|
+|**Edward's Ferry**|	154|  | 302 |  |  30|
+|**Chisel Branch Hiker-Biker Camp**|	154|  | 302 |  |  30|
+|**Horsepen Branch Hiker-Biker Camp**|	159|  | 307 |  |  26|
+|**Swain's Lock Hiker-Biker Camp**|	168|  | 316 |  |  17|
+|**Great Falls Tavern Visitor Center**|	170|  | 318 |  |  15|
+|**Marsden Tract Camp**|	173|  | 321 |  |  12|
+|**Sycamore Island**|	178|  | 326 |  |  7|
+|**Fletcher's Cove**|	181|  | 329 |  |  3|
+|**Georgetown Visitor Center**|	184|  | 332 |  |  0|
+|**Georgetown Terminus** | 185 |  |333 |  | 0 |
 
 
