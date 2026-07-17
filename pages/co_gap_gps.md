@@ -9,7 +9,7 @@ During Spring and Summer 2025 I mapped the [Chesapeake & Ohio Canal](https://www
 
 #### GPX Files
 
-* **Full Route** (Pittsburgh -> DC): [GPX File](<co_gap_gpx_data/Pittsburgh - Georgetown (GAP and C&O.gpx)>) (335 mi)
+* **Full Route** (Pittsburgh -> DC): [GPX File](<co_gap_gpx_data/Pittsburgh - Georgetown (GAP and C&O).gpx>) (335 mi)
 * Pittsburgh PA - Ohiopyle PA: [GPX File](co_gap_gpx_data/Pittsburgh-Ohiopyle.gpx) (72 mi)
 * Ohiopyle PA - Fort Hill PA: [GPX File](co_gap_gpx_data/Ohiopyle-FortHill.gpx) (24 mi)
 * Fort Hill PA - Meyersdale PA: [GPX File](co_gap_gpx_data/FortHill-Meyersdale.gpx) (22 mi)
