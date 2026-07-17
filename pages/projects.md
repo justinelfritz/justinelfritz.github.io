@@ -1,7 +1,7 @@
 ---
 layout: page
 title: projects
-description: collection point for overviews of individual projects
+description: overviews of individual projects
 ---
 
 <ul class="posts">

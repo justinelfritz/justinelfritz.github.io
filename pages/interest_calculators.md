@@ -66,6 +66,7 @@ $$K=-\frac{1}{ln(R)}ln(1+\frac{P}{x}\left(1-R\right))$$.
         `Total Interest Paid: ${interest.toFixed(2)}`;
     } else {
       document.getElementById('case1Result').innerText = "Please provide valid inputs.";
+      document.getElementById('int1Result').innerText = "";
     }
   }
 </script>
@@ -86,7 +87,7 @@ $$Q=x\left(K-R\frac{1-R^K}{1-R}\right)-P(1-R^K)$$.
   <input type="number" id="rc2" placeholder="Compounding Periods Per Year" />
   <input type="number" id="principal2" placeholder="Principal ($)" />
   <input type="number" id="periods2" placeholder="Number Of Payments"/>
-  <button onclick="calculateCase2()">Calculate </button>
+  <button onclick="calculateCase2()">Calculate Payment Amount</button>
   <p id="case2Result"></p>
   <p id="int2Result"></p>
 </div>
@@ -115,6 +116,7 @@ $$Q=x\left(K-R\frac{1-R^K}{1-R}\right)-P(1-R^K)$$.
         `Total Interest Paid: ${interest.toFixed(2)}`;
     } else {
       document.getElementById('case2Result').innerText = "Please provide valid inputs.";
+      document.getElementById('int2Result').innerText = "";
     }
   }
 </script>
