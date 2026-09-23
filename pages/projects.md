@@ -5,9 +5,10 @@ description: overviews of individual projects
 ---
 <style>
   .projects-group {
-    font-size: 1.15rem;
+    font-size: 1.00rem;
     font-weight: 600;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.2rem;
+    margin-top: 0.4rem;
   }
 </style>
 <ul class="posts">
