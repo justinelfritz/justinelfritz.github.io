@@ -8,7 +8,7 @@ description: overviews of individual projects
     font-size: 1.00rem;
     font-weight: 600;
     margin-bottom: 0.2rem;
-    margin-top: 0.4rem;
+    margin-top: 0.6rem;
   }
 </style>
 <ul class="posts">
