@@ -48,6 +48,8 @@ description: general synopsis and motivation
 
 ### Other publications
 
+(**2026**) [*FORTVSH: A Fortran Library For Vector Spherical Harmonics Computations*](https://arxiv.org/abs/2608.08419) J.G. Elfritz, arXiv preprint arXiv:2608.08419.
+
 (**2014**) [*Ion Temperatures in Earth's Inner Magnetosphere: Ring Current Dynamics, Transient Effects, and Data-Model Comparisons*](https://researchrepository.wvu.edu/etd/563/), J.G. Elfritz, Ph.D. Thesis, *West Virginia University*. 
 
 (**2011**) [*Sensitivity Analysis for L\**](https://www.lanl.gov/projects/national-security-education-center/space-earth-center/space-weather-school/papers-reports.php), J.G. Elfritz, J. Niehof, *Los Alamos Space Weather Research Reports*. 
